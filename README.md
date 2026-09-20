@@ -14,6 +14,13 @@ An end-to-end analytics project using Python, SQL, geospatial validation, Power 
 
 This model does not predict validated clinical need or establish causal healthcare demand.
 
+## Quick Review
+
+- **Open the dashboard:** [Power BI PBIX](powerbi/vch_vancouver_allocation.pbix)
+- **Read the management brief:** [Management Brief](docs/management_brief.md)
+- **Review the methodology:** [Methodology](docs/methodology.md)
+- **Inspect the technical implementation:** [Power BI source project](powerbi/vch_vancouver_allocation.pbip)
+
 ## Business Question
 
 > How can Vancouver Coastal Health leverage local socio-demographic population profiles and census non-response rates to predict community vulnerability, and how should we strategically distribute and allocate public healthcare resources—such as clinical staff, operational budgets, and community care services—to address geographic service gaps?
@@ -64,7 +71,7 @@ Public Data → Geographic Validation → Community Profile → Vulnerability Pr
 | [BC CHSA boundaries](https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_admin_boundaries/MapServer/12) | CHSA geography | Administrative boundaries do not measure access |
 | [Statistics Canada 2016 CSD boundary](https://open.canada.ca/data/dataset/90db78e2-eda2-4b2c-ae2e-a474187f2bf8) | Vancouver City validation | 2016 boundary vintage |
 
-Attribution is preserved under [data/raw](data/raw/) and [data/reference](data/reference/). No confidential or internal VCH data is used. ODHF is a **supply-location proxy**; it does not measure beds, staffing, volume, hours, utilization, wait times, accessibility, quality, or outcomes.
+Source metadata and attribution are preserved under [data/reference](data/reference/). Raw source files are not republished and remain subject to their providers' licences and terms. No confidential or internal VCH data is used. ODHF is a **supply-location proxy**; it does not measure beds, staffing, volume, hours, utilization, wait times, accessibility, quality, or outcomes.
 
 ## Data Pipeline
 
@@ -123,16 +130,15 @@ Python, pandas, NumPy, SciPy, GeoPandas, Shapely, SQLite, SQL, Power BI Desktop,
 ## Repository Structure
 
 ```text
-data/       Raw, reference, interim, and processed data
+data/       Reference and processed public-data artifacts
 docs/       Methodology, validation, limitations, and management documentation
-images/     Final Power BI screenshots (manual export pending)
+images/     Guidance and location for real Power BI dashboard screenshots
 outputs/    Analytical tables, validation results, SQLite, and supporting figures
 powerbi/    PBIP/PBIR, semantic model, Power Query, DAX, and resources
 python/     ETL, geospatial, scoring, allocation, and validation pipeline
 sql/        Schema, loading, analytical views, and validation queries
 tests/      Automated tests
 tools/      Supporting utilities
-archive/    Historical prototype artifacts retained for provenance
 ```
 
 ## Reproducibility
@@ -149,7 +155,7 @@ python python\07_validation.py
 python -m pytest -q
 ```
 
-The public source/reference files required by the pipeline are included. Then open [the PBIP](powerbi/vch_vancouver_allocation.pbip), update `pProjectRoot`, and refresh. See [Power BI instructions](powerbi/BUILD_INSTRUCTIONS.md).
+Processed artifacts and source metadata are included. Raw source files are intentionally not republished; obtain them from the providers listed under [Data Sources](#data-sources), place them in `data/raw/` as documented, and then run the pipeline. To refresh Power BI, open [the PBIP](powerbi/vch_vancouver_allocation.pbip), update `pProjectRoot`, and follow the [Power BI instructions](powerbi/BUILD_INSTRUCTIONS.md).
 
 ## Limitations
 
