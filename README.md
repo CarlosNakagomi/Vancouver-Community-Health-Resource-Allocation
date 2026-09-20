@@ -53,21 +53,7 @@ Raw source inputs are not redistributed in this repository; obtain them from the
 
 ## Important Interpretation
 
-- The **Vulnerability Proxy** uses age structure and is not a clinical-need or multidimensional deprivation measure.
-- **General Non-Response Rate (GNR)** indicates census uncertainty—not disadvantage.
-- **Mapped facility counts** are a supply-location proxy—not capacity, access, ownership, staffing, utilization, quality, or outcomes.
-- **Scenario allocations are hypothetical** and are not actual VCH allocations or recommendations.
-
-## Project Structure
-
-    Vancouver_Community_Health_Resource_Allocation.pdf   Six-page dashboard report
-    powerbi/    Standalone PBIX plus PBIP/PBIR/TMDL, Power Query, and DAX source
-    docs/       Management, methodology, validation, limitations, and technical documentation
-    python/     ETL, geospatial processing, scoring, allocation, and validation pipeline
-    sql/        Schema, analytical views, and validation queries
-    data/       Published reference metadata and processed analytical artifacts
-    outputs/    Analytical tables, validation results, and supporting figures
-    tests/      Automated project tests
+The **Vulnerability Proxy** uses age structure and is not a clinical-need or multidimensional deprivation measure; **General Non-Response Rate (GNR)** represents census uncertainty, not disadvantage; **mapped facility counts** are a supply-location proxy, not capacity, access, or ownership; and **scenario allocations are hypothetical**, not actual VCH allocations or recommendations.
 
 ## Technical Documentation
 
