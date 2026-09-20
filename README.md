@@ -22,7 +22,11 @@ Here, “predict community vulnerability” is operationalized as a transparent 
 
 ## Dashboard Preview
 
-The completed source-controlled Power BI Project is [powerbi/vch_vancouver_allocation.pbip](powerbi/vch_vancouver_allocation.pbip). Its six analytical pages are Executive Overview, Community Vulnerability, Data Blindspots, Healthcare Supply & Service Gaps, Resource Allocation Scenario, and Methodology & Data Quality.
+### Explore the Power BI Dashboard
+
+For the easiest interactive review, download and open [powerbi/vch_vancouver_allocation.pbix](powerbi/vch_vancouver_allocation.pbix) in Power BI Desktop. This standalone file contains the completed report, semantic model, and imported portfolio data.
+
+For technical and source review, [powerbi/vch_vancouver_allocation.pbip](powerbi/vch_vancouver_allocation.pbip), together with the PBIR report definitions, TMDL semantic model, Power Query transformations, and DAX measures, remains the source-controlled implementation. Its six analytical pages are Executive Overview, Community Vulnerability, Data Blindspots, Healthcare Supply & Service Gaps, Resource Allocation Scenario, and Methodology & Data Quality.
 
 Real page screenshots have not yet been exported. Required filenames are listed in [images/README.md](images/README.md); no mock dashboard images are used here.
 

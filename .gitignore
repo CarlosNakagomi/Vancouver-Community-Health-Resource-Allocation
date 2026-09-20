@@ -22,13 +22,12 @@ htmlcov/
 credentials.json
 secrets.json
 
-# Power BI temporary / user-local artifacts (retain PBIP/PBIR/TMDL)
-# Obsolete 15 KB blank PBIX shell; the completed report is the PBIP
-powerbi/vch_vancouver_allocation.pbix
+# Power BI temporary / user-local artifacts (retain PBIX/PBIR/TMDL)
 *.pbix.tmp
 *.pbit.tmp
 *.pbix.autorecovery
 ~$*.pbix
+**/.pbi/
 **/.pbi/localSettings.json
 **/.pbi/cache.abf
 
