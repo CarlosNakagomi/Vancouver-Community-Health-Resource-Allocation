@@ -1,0 +1,946 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>Metadata</title>
+      <meta charset="UTF-8">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12" style="padding:10px;border: 1px solid black" >
+                     <img class="img-fluid d-block mx-auto" src="https://catalogue.data.gov.bc.ca/img/bc_mark.699f8f93.png" alt="B.C. Government Logo" style="height:65px;background-color:#003366">
+                     <H2 style="color:rgb(2,47,248)" class="text-center">Census Age Profiles for Community Health Service Areas - 2016 Census</H2>
+                     <table class="table table-condensed">
+                        <thead>
+                           <tr>
+                              <th>Title</th>
+                              <th>Purpose</th>
+                              <th>Description</th>
+                              <th>Last Modified Date</th>
+                              <th>BCDC URL</th>
+                              <th>BCDC Type</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Census Age Profiles for Community Health Service Areas - 2016 Census</td>
+                              <td></td>
+                              <td>Age characteristics in private households by sex and age groups (25% sample data). 2016 Census profile data at the Community Health Service Areas (CHSA) level.</td>
+                              <td>2023-04-01T00:03:10</td>
+                              <td><a href="https://catalogue.data.gov.bc.ca/dataset/da8d93a5-a6b0-4f07-80e5-1a1ec3776595">https://catalogue.data.gov.bc.ca/dataset/da8d93a5-a6b0-4f07-80e5-1a1ec3776595</a></td>
+                              <td>Geographic</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table class="table table-condensed">
+                        <thead>
+                           <tr>
+                              <th>Resource Location</th>
+                              <th>Object Name</th>
+                              <th>Short Name</th>
+                              <th>Object Comments</th>
+                              <th>Projection</th>
+                              <th>License Title</th>
+                              <th>License URL</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Bc Geographic Warehouse</td>
+                              <td>WHSE_HUMAN_CULTURAL_ECONOMIC. BCHA_CHSA_POPULATION_AGE_PH_SV</td>
+                              <td>BCHACHSAPO</td>
+                              <td>Age characteristics in private households by sex and age groups (25% sample data).</td>
+                              <td>epsg3005</td>
+                              <td>Statistics Canada Open Licence</td>
+                              <td><a href="https://www.statcan.gc.ca/eng/reference/licence">License Url</a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+               <hr style="border-width:4px ">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12" style="padding:10px;border: 1px solid black" >
+                     <H5 style="color:rgb(2,47,248)" class="text-left">Column Details</H5>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th>Column Name</th>
+                              <th>Short Name</th>
+                              <th>Data Type</th>
+                              <th>Data Precision</th>
+                              <th>Column Comments</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>CMNTY_HLTH_SERV_AREA_CODE</td>
+                              <td>CH_SA_CODE</td>
+                              <td>CHAR</td>
+                              <td>4</td>
+                              <td>Is the number of the Community Health Service Area, e.g., 1220, 2223, 4252.</td>
+                           </tr>
+                           <tr>
+                              <td>CMNTY_HLTH_SERV_AREA_NAME</td>
+                              <td>CH_SA_NAME</td>
+                              <td>VARCHAR2</td>
+                              <td>254</td>
+                              <td>Is the name of the Community Health Service Area, e.g., Nelson, Burnaby Southwest, Qualicum Beach.</td>
+                           </tr>
+                           <tr>
+                              <td>CHSA_URBAN_RURAL_CLASS</td>
+                              <td>CHSRBRL_CL</td>
+                              <td>VARCHAR2</td>
+                              <td>30</td>
+                              <td>Is the class of the Community Heath Service Area, e.g., 6 Rural, 1 Metro, 4  Urban/Rural.</td>
+                           </tr>
+                           <tr>
+                              <td>CHSA_POPULATION_CENSUS</td>
+                              <td>CHSPOP_CEN</td>
+                              <td>NUMBER</td>
+                              <td>5</td>
+                              <td>Is the population of the Community Health Service Area base on census values.</td>
+                           </tr>
+                           <tr>
+                              <td>LOCAL_HLTH_AREA_CODE</td>
+                              <td>HLT_A_CODE</td>
+                              <td>CHAR</td>
+                              <td>3</td>
+                              <td>Is the number of the Local Health Area, e.g., 122, 222, 425.</td>
+                           </tr>
+                           <tr>
+                              <td>LOCAL_HLTH_AREA_NAME</td>
+                              <td>HLT_A_NAME</td>
+                              <td>VARCHAR2</td>
+                              <td>254</td>
+                              <td>Is the name of the Local Health Area, e.g., Nelson, Burnaby, Oceanside.</td>
+                           </tr>
+                           <tr>
+                              <td>HLTH_SERVICE_DLVR_AREA_CODE</td>
+                              <td>HSD_A_CODE</td>
+                              <td>CHAR</td>
+                              <td>2</td>
+                              <td>Is the number of the Health Service Delivery Area, e.g., 12, 22, 42.</td>
+                           </tr>
+                           <tr>
+                              <td>HLTH_SERVICE_DLVR_AREA_NAME</td>
+                              <td>HSD_A_NAME</td>
+                              <td>VARCHAR2</td>
+                              <td>254</td>
+                              <td>Is the name of the Health Service Delivery Area, e.g., Kootenay Boundary, Fraser North, Central Vancouver Island.</td>
+                           </tr>
+                           <tr>
+                              <td>HLTH_SERVICE_DLVR_AREA_ID</td>
+                              <td>HSDA_ID</td>
+                              <td>VARCHAR2</td>
+                              <td>10</td>
+                              <td>Is the number and acronymn of the Health Service Delivery Area, e.g., 12 KB, 22 FN, 42 CVI.</td>
+                           </tr>
+                           <tr>
+                              <td>HLTH_AUTHORITY_CODE</td>
+                              <td>HAUTH_CODE</td>
+                              <td>CHAR</td>
+                              <td>1</td>
+                              <td>Is the number of the Health Authority, e.g., 1, 2, 3, 4, 5.</td>
+                           </tr>
+                           <tr>
+                              <td>HLTH_AUTHORITY_NAME</td>
+                              <td>HAUTH_NAME</td>
+                              <td>VARCHAR2</td>
+                              <td>254</td>
+                              <td>Is the name of the Health Authority, e.g., Interior, Fraser, Vancouver Coastal, Vancouver Island, Northern.</td>
+                           </tr>
+                           <tr>
+                              <td>HLTH_AUTHORITY_ID</td>
+                              <td>HAUTH_ID</td>
+                              <td>VARCHAR2</td>
+                              <td>10</td>
+                              <td>Is the number and acronymn of the Health Authority, e.g., 1 IHA, 2 FHA, 3 VCH, 4 VIH, 5 NHA.</td>
+                           </tr>
+                           <tr>
+                              <td>SHORT_FORM_DQF</td>
+                              <td>SH_FRM_DQF</td>
+                              <td>CHAR</td>
+                              <td>5</td>
+                              <td>The data quality flags for this region for census short form results, e.g., 00100</td>
+                           </tr>
+                           <tr>
+                              <td>LONG_FORM_DQF</td>
+                              <td>LG_FRM_DFQ</td>
+                              <td>CHAR</td>
+                              <td>5</td>
+                              <td>The data quality flags for this region for census long form results, e.g., 00100</td>
+                           </tr>
+                           <tr>
+                              <td>SHORT_FORM_GNR</td>
+                              <td>SH_FRM_GNR</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>The global non-response percentage for this region for the census short form.</td>
+                           </tr>
+                           <tr>
+                              <td>LONG_FORM_GNR</td>
+                              <td>LG_FRM_GNR</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>The global non-response percentage for this region for the census long form.</td>
+                           </tr>
+                           <tr>
+                              <td>NOTIN_PRIV_HSHLD_TOTAL</td>
+                              <td>NIPH_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Persons not in census families in private households - 100% data</td>
+                           </tr>
+                           <tr>
+                              <td>NOTIN_PRIV_HSHLD_MALE_TOTAL</td>
+                              <td>NIPH_M_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Males not in census families in private households - 100% data</td>
+                           </tr>
+                           <tr>
+                              <td>NOTIN_PRIV_HSHLD_FEMALE_TOTAL</td>
+                              <td>NIPH_F_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Females not in census families in private households - 100% data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_GROUPS_ALL_TOTAL</td>
+                              <td>GRP_A_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Age groups of the population in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_0_14_ALL_TOTAL</td>
+                              <td>0_14_A_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 0 to 14 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_0_4_ALL_TOTAL</td>
+                              <td>0_4_A_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 0 to 4 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_5_9_ALL_TOTAL</td>
+                              <td>5_9_A_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 5 to 9 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_10_14_ALL_TOTAL</td>
+                              <td>10_14_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 10 to 14 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_15_64_ALL_TOTAL</td>
+                              <td>15_64_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 15 to 64 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_15_19_ALL_TOTAL</td>
+                              <td>15_19_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 15 to 19 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_20_24_ALL_TOTAL</td>
+                              <td>20_24_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 20 to 24 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_25_29_ALL_TOTAL</td>
+                              <td>25_29_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 25 to 29 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_30_34_ALL_TOTAL</td>
+                              <td>30_34_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 30 to 34 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_35_39_ALL_TOTAL</td>
+                              <td>35_39_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 35 to 39 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_40_44_ALL_TOTAL</td>
+                              <td>40_44_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 40 to 44 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_45_49_ALL_TOTAL</td>
+                              <td>45_49_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 45 to 49 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_50_54_ALL_TOTAL</td>
+                              <td>50_54_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 50 to 54 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_55_59_ALL_TOTAL</td>
+                              <td>55_59_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 55 to 59 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_60_64_ALL_TOTAL</td>
+                              <td>60_64_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 60 to 64 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_65_PLUS_ALL_TOTAL</td>
+                              <td>65PLS_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 65 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_65_69_ALL_TOTAL</td>
+                              <td>65_69_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 65 to 69 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_70_74_ALL_TOTAL</td>
+                              <td>70_74_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 70 to 74 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_75_79_ALL_TOTAL</td>
+                              <td>75_79_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 75 to 79 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_80_84_ALL_TOTAL</td>
+                              <td>80_84_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 80 to 84 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_85_PLUS_ALL_TOTAL</td>
+                              <td>85PLS_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 85 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_85_89_ALL_TOTAL</td>
+                              <td>85_89_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 85 to 89 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_90_94_ALL_TOTAL</td>
+                              <td>90_94_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 90 to 94 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_95_99_ALL_TOTAL</td>
+                              <td>95_99_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 95 to 99 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_100_PLUS_ALL_TOTAL</td>
+                              <td>100_PLS_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 100 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_GROUPS_MALE_TOTAL</td>
+                              <td>GRP_M_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Age groups of males in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_0_14_MALE_TOTAL</td>
+                              <td>0_14_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 0 to 14 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_0_4_MALE_TOTAL</td>
+                              <td>0_4_M_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 0 to 4 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_5_9_MALE_TOTAL</td>
+                              <td>5_9_M_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 5 to 9 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_10_14_MALE_TOTAL</td>
+                              <td>10_14_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 10 to 14 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_15_64_MALE_TOTAL</td>
+                              <td>15_64_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 15 to 64 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_15_19_MALE_TOTAL</td>
+                              <td>15_19_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 15 to 19 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_20_24_MALE_TOTAL</td>
+                              <td>20_24_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 20 to 24 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_25_29_MALE_TOTAL</td>
+                              <td>25_29_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 25 to 29 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_30_34_MALE_TOTAL</td>
+                              <td>30_34_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 30 to 34 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_35_39_MALE_TOTAL</td>
+                              <td>35_39_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 35 to 39 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_40_44_MALE_TOTAL</td>
+                              <td>40_44_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 40 to 44 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_45_49_MALE_TOTAL</td>
+                              <td>45_49_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 45 to 49 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_50_54_MALE_TOTAL</td>
+                              <td>50_54_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 50 to 54 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_55_59_MALE_TOTAL</td>
+                              <td>55_59_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 55 to 59 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_60_64_MALE_TOTAL</td>
+                              <td>60_64_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 60 to 64 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_65_PLUS_MALE_TOTAL</td>
+                              <td>65PLS_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 65 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_65_69_MALE_TOTAL</td>
+                              <td>65_69_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 65 to 69 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_70_74_MALE_TOTAL</td>
+                              <td>70_74_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 70 to 74 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_75_79_MALE_TOTAL</td>
+                              <td>75_79_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 75 to 79 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_80_84_MALE_TOTAL</td>
+                              <td>80_84_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 80 to 84 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_85_PLUS_MALE_TOTAL</td>
+                              <td>85PLS_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 85 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_85_89_MALE_TOTAL</td>
+                              <td>85_89_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 85 to 89 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_90_94_MALE_TOTAL</td>
+                              <td>90_95_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 90 to 94 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_95_99_MALE_TOTAL</td>
+                              <td>95_99_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 95 to 99 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_100_PLUS_MALE_TOTAL</td>
+                              <td>100_P_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 100 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_GROUPS_FEMALE_TOTAL</td>
+                              <td>GRP_F_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Age groups of females in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_0_14_FEMALE_TOTAL</td>
+                              <td>0_14_F_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 0 to 14 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_0_4_FEMALE_TOTAL</td>
+                              <td>0_4_F_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 0 to 4 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_5_9_FEMALE_TOTAL</td>
+                              <td>5_9_F_TTL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 5 to 9 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_10_14_FEMALE_TOTAL</td>
+                              <td>10_14_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 10 to 14 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_15_64_FEMALE_TOTAL</td>
+                              <td>15_64_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 15 to 64 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_15_19_FEMALE_TOTAL</td>
+                              <td>15_19_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 15 to 19 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_20_24_FEMALE_TOTAL</td>
+                              <td>20_24_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 20 to 24 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_25_29_FEMALE_TOTAL</td>
+                              <td>25_29_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 25 to 29 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_30_34_FEMALE_TOTAL</td>
+                              <td>30_34_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 30 to 34 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_35_39_FEMALE_TOTAL</td>
+                              <td>35_39_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 35 to 39 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_40_44_FEMALE_TOTAL</td>
+                              <td>40_44_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 40 to 44 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_45_49_FEMALE_TOTAL</td>
+                              <td>45_49_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 45 to 49 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_50_54_FEMALE_TOTAL</td>
+                              <td>50_54_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 50 to 54 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_55_59_FEMALE_TOTAL</td>
+                              <td>55_59_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 55 to 59 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_60_64_FEMALE_TOTAL</td>
+                              <td>60_64_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 60 to 64 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_65_PLUS_FEMALE_TOTAL</td>
+                              <td>65PLS_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 65 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_65_69_FEMALE_TOTAL</td>
+                              <td>65_69_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 65 to 69 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_70_74_FEMALE_TOTAL</td>
+                              <td>70_74_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 70 to 74 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_75_79_FEMALE_TOTAL</td>
+                              <td>75_79_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 75 to 79 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_80_84_FEMALE_TOTAL</td>
+                              <td>80_84_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 80 to 84 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_85_PLUS_FEMALE_TOTAL</td>
+                              <td>85PLS_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 85 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_85_89_FEMALE_TOTAL</td>
+                              <td>85_89_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 85 to 89 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_90_94_FEMALE_TOTAL</td>
+                              <td>90_95_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 90 to 94 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_95_99_FEMALE_TOTAL</td>
+                              <td>95_99_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 95 to 99 years in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_100_PLUS_FEMALE_TOTAL</td>
+                              <td>AG_100_PFT</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 100 years and over in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_GROUPS_ALL_TOTAL</td>
+                              <td>B_GRP_A_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Distribution (%) of the population in private households by broad age groups - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_0_14_ALL_TOTAL</td>
+                              <td>AB0_14_A_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 0 to 14 years in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_15_64_ALL_TOTAL</td>
+                              <td>AB15_64A_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 15 to 64 years in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_65_PLUS_ALL_TOTAL</td>
+                              <td>AB65_P_A_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 65 years and over in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_85_PLUS_ALL_TOTAL</td>
+                              <td>AB85_P_A_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of people aged 85 years and over in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_GROUPS_MALE_TOTAL</td>
+                              <td>B_GRP_M_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Distribution (%) of males in private households by broad age groups - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_0_14_MALE_TOTAL</td>
+                              <td>AG0_14_M_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 0 to 14 years in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_15_64_MALE_TOTAL</td>
+                              <td>AG15_64M_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 15 to 64 years in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_65_PLUS_MALE_TOTAL</td>
+                              <td>AG_65P_M_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 65 years and over in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_85_PLUS_MALE_TOTAL</td>
+                              <td>AG_85P_M_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of males aged 85 years and over in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_GROUPS_FEMALE_TOTAL</td>
+                              <td>B_GRP_F_TL</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Total - Distribution (%) of females in private households by broad age groups - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_0_14_FEMALE_TOTAL</td>
+                              <td>AG0_14_F_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 0 to 14 years in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_15_64_FEMALE_TOTAL</td>
+                              <td>AG15_64F_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 15 to 64 years in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_65_PLUS_FEMALE_TOTAL</td>
+                              <td>AG_65P_F_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 65 years and over in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AGE_BROAD_85_PLUS_FEMALE_TOTAL</td>
+                              <td>AG_85P_F_T</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Number of females aged 85 years and over in private households (broad age groups) - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AVERAGE_AGE_OF_POPULATION</td>
+                              <td>AVG_AG_POP</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Average age of the population in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>MEDIAN_AGE_OF_POPULATION</td>
+                              <td>MDN_A_F_PN</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Median age of the population in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AVERAGE_AGE_OF_MALES</td>
+                              <td>AVG_AGE_M</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Average age of males in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>MEDIAN_AGE_OF_MALES</td>
+                              <td>MDN_A_M_PN</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Median age of males in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>AVERAGE_AGE_OF_FEMALES</td>
+                              <td>AVG_AGE_F</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Average age of females in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>MEDIAN_AGE_OF_FEMALES</td>
+                              <td>MDN_AGE_F</td>
+                              <td>NUMBER</td>
+                              <td>10</td>
+                              <td>Median age of females in private households - 25% sample data</td>
+                           </tr>
+                           <tr>
+                              <td>FEATURE_AREA_SQM</td>
+                              <td>FEAT_AREA</td>
+                              <td>NUMBER</td>
+                              <td>19</td>
+                              <td>Is the system calculated area of a two-dimensional polygon in square meters</td>
+                           </tr>
+                           <tr>
+                              <td>FEATURE_LENGTH_M</td>
+                              <td>FEAT_LEN</td>
+                              <td>NUMBER</td>
+                              <td>19</td>
+                              <td>Is the system calculated length or perimeter of a geometry in meters</td>
+                           </tr>
+                           <tr>
+                              <td>SHAPE</td>
+                              <td>SHAPE</td>
+                              <td>SDO_GEOMETRY</td>
+                              <td>64</td>
+                              <td>Is the column used to reference the spatial coordinates defining the feature.</td>
+                           </tr>
+                           <tr>
+                              <td>OBJECTID</td>
+                              <td>OBJECTID</td>
+                              <td>NUMBER</td>
+                              <td>38</td>
+                              <td>Is a required attribute of feature classes and object classes in a geodatabase.</td>
+                           </tr>
+                           <tr>
+                              <td>SE_ANNO_CAD_DATA</td>
+                              <td>None</td>
+                              <td>BLOB</td>
+                              <td>4000</td>
+                              <td>Is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data</td>
+                           </tr>
+                        </tbody>
+                     </table>
+               <hr style="border-width:5px ">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+

@@ -1,0 +1,83 @@
+path,bytes,extension,role
+.gitignore,303,,project configuration
+archive\web-prototype\dist\app.js,17765,.js,archived prototype
+archive\web-prototype\dist\data\BCHACHSAPO.csv,948,.csv,archived prototype
+archive\web-prototype\dist\index.html,5488,.html,archived prototype
+archive\web-prototype\dist\styles.css,9079,.css,archived prototype
+archive\web-prototype\README.md,706,.md,archived prototype
+data\processed\bridge_cha2_business_rule.csv,268,.csv,data asset
+data\processed\bridge_facility_source_record.csv,8624,.csv,data asset
+data\processed\dim_facility.csv,49852,.csv,data asset
+data\processed\facility_spatial_assignments.csv,58597,.csv,data asset
+data\processed\fact_community_profile.csv,3801,.csv,data asset
+data\processed\fact_facility_supply.csv,1614,.csv,data asset
+data\processed\stg_chsa_census.parquet,167580,.parquet,data asset
+data\processed\stg_odhf_facilities.parquet,958552,.parquet,data asset
+data\processed\vancouver_chsa_boundaries.geojson,202513,.geojson,data asset
+data\raw\BCGW_CHSA_2016_source_package.zip,54881,.zip,data asset
+data\raw\BCHACHSAPO.csv,128579,.csv,data asset
+data\raw\odhf_bdoes_v1.csv,1996074,.csv,data asset
+data\reference\bc_data_licence.txt,275,.txt,data asset
+data\reference\bc_data_order.txt,288,.txt,data asset
+data\reference\bc_data_readme.txt,426,.txt,data asset
+data\reference\BCHACHSAPO_metadata.html,51319,.html,data asset
+data\reference\BCHACHSAPO_metadata.json,32597,.json,data asset
+data\reference\chsa_boundaries_vancouver_lha.geojson,196717,.geojson,data asset
+data\reference\vancouver_csd_2016.geojson,19944,.geojson,data asset
+docs\build_log.md,2323,.md,documentation
+docs\business_rules.md,3813,.md,documentation
+docs\data_dictionary.md,3142,.md,documentation
+docs\data_quality_report.md,3012,.md,documentation
+docs\limitations.md,1475,.md,documentation
+docs\management_brief.md,2637,.md,documentation
+docs\manual_todo.md,1060,.md,documentation
+docs\methodology.md,4483,.md,documentation
+docs\validation_report.md,1485,.md,documentation
+outputs\analytical\community_priority_and_allocation.csv,6893,.csv,generated output
+outputs\analytical\descriptive_statistics.csv,1186,.csv,generated output
+outputs\analytical\outlier_analysis.csv,481,.csv,generated output
+outputs\analytical\sensitivity_analysis.csv,5046,.csv,generated output
+outputs\analytical\spearman_correlations.csv,2116,.csv,generated output
+outputs\analytical\vch_vancouver_allocation.sqlite,77824,.sqlite,generated output
+outputs\data_quality\census_categorical_distributions.csv,3286,.csv,generated output
+outputs\data_quality\chsa_city_overlap.csv,978,.csv,generated output
+outputs\data_quality\chsa_excluded_by_city_rule.csv,129,.csv,generated output
+outputs\data_quality\column_profile.csv,13638,.csv,generated output
+outputs\data_quality\dataset_quality_summary.json,1532,.json,generated output
+outputs\data_quality\facility_categorical_distributions.csv,32265,.csv,generated output
+outputs\data_quality\source_data_dictionary.csv,17950,.csv,generated output
+outputs\data_quality\source_inventory.csv,452,.csv,generated output
+outputs\data_quality\validation_results.csv,678,.csv,generated output
+outputs\data_quality\validation_summary.json,1634,.json,generated output
+outputs\figures\resource_priority_ranking.png,118948,.png,generated output
+outputs\figures\vulnerability_supply_scatter.png,126509,.png,generated output
+powerbi\BUILD_INSTRUCTIONS.md,4472,.md,Power BI asset
+powerbi\dax\measures.dax,2043,.dax,Power BI asset
+powerbi\power_query\DimCHSA.m,663,.m,Power BI asset
+powerbi\power_query\DimFacility.m,537,.m,Power BI asset
+powerbi\power_query\FactAllocationScenario.m,872,.m,Power BI asset
+powerbi\power_query\FactCommunityProfile.m,602,.m,Power BI asset
+powerbi\power_query\FactFacilitySupply.m,629,.m,Power BI asset
+powerbi\power_query\pProjectRoot.m,188,.m,Power BI asset
+powerbi\power_query\README.md,800,.md,Power BI asset
+powerbi\power_query\stg_CHSA_Census.m,1342,.m,Power BI asset
+powerbi\power_query\stg_ODHF_Facilities.m,1573,.m,Power BI asset
+powerbi\vch_vancouver_allocation.pbix,15958,.pbix,Power BI asset
+python\01_data_understanding.py,3489,.py,pipeline code
+python\02_data_quality.py,4509,.py,pipeline code
+python\03_cleaning.py,2072,.py,pipeline code
+python\04_geospatial.py,4326,.py,pipeline code
+python\05_vulnerability.py,1790,.py,pipeline code
+python\06_resource_allocation.py,5567,.py,pipeline code
+python\07_validation.py,2794,.py,pipeline code
+python\build_sqlite.py,2826,.py,pipeline code
+python\common.py,4517,.py,pipeline code
+python\run_pipeline.py,489,.py,pipeline code
+README.md,9161,.md,project configuration
+requirements.txt,139,.txt,project configuration
+sql\01_schema.sql,2055,.sql,SQL model
+sql\02_data_quality.sql,888,.sql,SQL model
+sql\03_transformations.sql,783,.sql,SQL model
+sql\04_analytical_views.sql,591,.sql,SQL model
+sql\05_validation.sql,868,.sql,SQL model
+tests\test_outputs.py,1098,.py,automated test

@@ -1,0 +1,142 @@
+dataset,physical_column,logical_name,source_type,definition
+BCHACHSAPO,CH_SA_CODE,CMNTY_HLTH_SERV_AREA_CODE,CHAR,"Is the number of the Community Health Service Area, e.g., 1220, 2223, 4252."
+BCHACHSAPO,CH_SA_NAME,CMNTY_HLTH_SERV_AREA_NAME,VARCHAR2,"Is the name of the Community Health Service Area, e.g., Nelson, Burnaby Southwest, Qualicum Beach."
+BCHACHSAPO,CHSRBRL_CL,CHSA_URBAN_RURAL_CLASS,VARCHAR2,"Is the class of the Community Heath Service Area, e.g., 6 Rural, 1 Metro, 4  Urban/Rural."
+BCHACHSAPO,CHSPOP_CEN,CHSA_POPULATION_CENSUS,NUMBER,Is the population of the Community Health Service Area base on census values.
+BCHACHSAPO,HLT_A_CODE,LOCAL_HLTH_AREA_CODE,CHAR,"Is the number of the Local Health Area, e.g., 122, 222, 425."
+BCHACHSAPO,HLT_A_NAME,LOCAL_HLTH_AREA_NAME,VARCHAR2,"Is the name of the Local Health Area, e.g., Nelson, Burnaby, Oceanside."
+BCHACHSAPO,HSD_A_CODE,HLTH_SERVICE_DLVR_AREA_CODE,CHAR,"Is the number of the Health Service Delivery Area, e.g., 12, 22, 42."
+BCHACHSAPO,HSD_A_NAME,HLTH_SERVICE_DLVR_AREA_NAME,VARCHAR2,"Is the name of the Health Service Delivery Area, e.g., Kootenay Boundary, Fraser North, Central Vancouver Island."
+BCHACHSAPO,HSDA_ID,HLTH_SERVICE_DLVR_AREA_ID,VARCHAR2,"Is the number and acronymn of the Health Service Delivery Area, e.g., 12 KB, 22 FN, 42 CVI."
+BCHACHSAPO,HAUTH_CODE,HLTH_AUTHORITY_CODE,CHAR,"Is the number of the Health Authority, e.g., 1, 2, 3, 4, 5."
+BCHACHSAPO,HAUTH_NAME,HLTH_AUTHORITY_NAME,VARCHAR2,"Is the name of the Health Authority, e.g., Interior, Fraser, Vancouver Coastal, Vancouver Island, Northern."
+BCHACHSAPO,HAUTH_ID,HLTH_AUTHORITY_ID,VARCHAR2,"Is the number and acronymn of the Health Authority, e.g., 1 IHA, 2 FHA, 3 VCH, 4 VIH, 5 NHA."
+BCHACHSAPO,SH_FRM_DQF,SHORT_FORM_DQF,CHAR,"The data quality flags for this region for census short form results, e.g., 00100"
+BCHACHSAPO,LG_FRM_DFQ,LONG_FORM_DQF,CHAR,"The data quality flags for this region for census long form results, e.g., 00100"
+BCHACHSAPO,SH_FRM_GNR,SHORT_FORM_GNR,NUMBER,The global non-response percentage for this region for the census short form.
+BCHACHSAPO,LG_FRM_GNR,LONG_FORM_GNR,NUMBER,The global non-response percentage for this region for the census long form.
+BCHACHSAPO,NIPH_TTL,NOTIN_PRIV_HSHLD_TOTAL,NUMBER,Total - Persons not in census families in private households - 100% data
+BCHACHSAPO,NIPH_M_TTL,NOTIN_PRIV_HSHLD_MALE_TOTAL,NUMBER,Total - Males not in census families in private households - 100% data
+BCHACHSAPO,NIPH_F_TTL,NOTIN_PRIV_HSHLD_FEMALE_TOTAL,NUMBER,Total - Females not in census families in private households - 100% data
+BCHACHSAPO,GRP_A_TTL,AGE_GROUPS_ALL_TOTAL,NUMBER,Total - Age groups of the population in private households - 25% sample data
+BCHACHSAPO,0_14_A_TTL,AGE_0_14_ALL_TOTAL,NUMBER,Number of people aged 0 to 14 years in private households - 25% sample data
+BCHACHSAPO,0_4_A_TTL,AGE_0_4_ALL_TOTAL,NUMBER,Number of people aged 0 to 4 years in private households - 25% sample data
+BCHACHSAPO,5_9_A_TTL,AGE_5_9_ALL_TOTAL,NUMBER,Number of people aged 5 to 9 years in private households - 25% sample data
+BCHACHSAPO,10_14_A_TL,AGE_10_14_ALL_TOTAL,NUMBER,Number of people aged 10 to 14 years in private households - 25% sample data
+BCHACHSAPO,15_64_A_TL,AGE_15_64_ALL_TOTAL,NUMBER,Number of people aged 15 to 64 years in private households - 25% sample data
+BCHACHSAPO,15_19_A_TL,AGE_15_19_ALL_TOTAL,NUMBER,Number of people aged 15 to 19 years in private households - 25% sample data
+BCHACHSAPO,20_24_A_TL,AGE_20_24_ALL_TOTAL,NUMBER,Number of people aged 20 to 24 years in private households - 25% sample data
+BCHACHSAPO,25_29_A_TL,AGE_25_29_ALL_TOTAL,NUMBER,Number of people aged 25 to 29 years in private households - 25% sample data
+BCHACHSAPO,30_34_A_TL,AGE_30_34_ALL_TOTAL,NUMBER,Number of people aged 30 to 34 years in private households - 25% sample data
+BCHACHSAPO,35_39_A_TL,AGE_35_39_ALL_TOTAL,NUMBER,Number of people aged 35 to 39 years in private households - 25% sample data
+BCHACHSAPO,40_44_A_TL,AGE_40_44_ALL_TOTAL,NUMBER,Number of people aged 40 to 44 years in private households - 25% sample data
+BCHACHSAPO,45_49_A_TL,AGE_45_49_ALL_TOTAL,NUMBER,Number of people aged 45 to 49 years in private households - 25% sample data
+BCHACHSAPO,50_54_A_TL,AGE_50_54_ALL_TOTAL,NUMBER,Number of people aged 50 to 54 years in private households - 25% sample data
+BCHACHSAPO,55_59_A_TL,AGE_55_59_ALL_TOTAL,NUMBER,Number of people aged 55 to 59 years in private households - 25% sample data
+BCHACHSAPO,60_64_A_TL,AGE_60_64_ALL_TOTAL,NUMBER,Number of people aged 60 to 64 years in private households - 25% sample data
+BCHACHSAPO,65PLS_A_TL,AGE_65_PLUS_ALL_TOTAL,NUMBER,Number of people aged 65 years and over in private households - 25% sample data
+BCHACHSAPO,65_69_A_TL,AGE_65_69_ALL_TOTAL,NUMBER,Number of people aged 65 to 69 years in private households - 25% sample data
+BCHACHSAPO,70_74_A_TL,AGE_70_74_ALL_TOTAL,NUMBER,Number of people aged 70 to 74 years in private households - 25% sample data
+BCHACHSAPO,75_79_A_TL,AGE_75_79_ALL_TOTAL,NUMBER,Number of people aged 75 to 79 years in private households - 25% sample data
+BCHACHSAPO,80_84_A_TL,AGE_80_84_ALL_TOTAL,NUMBER,Number of people aged 80 to 84 years in private households - 25% sample data
+BCHACHSAPO,85PLS_A_TL,AGE_85_PLUS_ALL_TOTAL,NUMBER,Number of people aged 85 years and over in private households - 25% sample data
+BCHACHSAPO,85_89_A_TL,AGE_85_89_ALL_TOTAL,NUMBER,Number of people aged 85 to 89 years in private households - 25% sample data
+BCHACHSAPO,90_94_A_TL,AGE_90_94_ALL_TOTAL,NUMBER,Number of people aged 90 to 94 years in private households - 25% sample data
+BCHACHSAPO,95_99_A_TL,AGE_95_99_ALL_TOTAL,NUMBER,Number of people aged 95 to 99 years in private households - 25% sample data
+BCHACHSAPO,100_PLS_TL,AGE_100_PLUS_ALL_TOTAL,NUMBER,Number of people aged 100 years and over in private households - 25% sample data
+BCHACHSAPO,GRP_M_TTL,AGE_GROUPS_MALE_TOTAL,NUMBER,Total - Age groups of males in private households - 25% sample data
+BCHACHSAPO,0_14_M_TL,AGE_0_14_MALE_TOTAL,NUMBER,Number of males aged 0 to 14 years in private households - 25% sample data
+BCHACHSAPO,0_4_M_TTL,AGE_0_4_MALE_TOTAL,NUMBER,Number of males aged 0 to 4 years in private households - 25% sample data
+BCHACHSAPO,5_9_M_TTL,AGE_5_9_MALE_TOTAL,NUMBER,Number of males aged 5 to 9 years in private households - 25% sample data
+BCHACHSAPO,10_14_M_TL,AGE_10_14_MALE_TOTAL,NUMBER,Number of males aged 10 to 14 years in private households - 25% sample data
+BCHACHSAPO,15_64_M_TL,AGE_15_64_MALE_TOTAL,NUMBER,Number of males aged 15 to 64 years in private households - 25% sample data
+BCHACHSAPO,15_19_M_TL,AGE_15_19_MALE_TOTAL,NUMBER,Number of males aged 15 to 19 years in private households - 25% sample data
+BCHACHSAPO,20_24_M_TL,AGE_20_24_MALE_TOTAL,NUMBER,Number of males aged 20 to 24 years in private households - 25% sample data
+BCHACHSAPO,25_29_M_TL,AGE_25_29_MALE_TOTAL,NUMBER,Number of males aged 25 to 29 years in private households - 25% sample data
+BCHACHSAPO,30_34_M_TL,AGE_30_34_MALE_TOTAL,NUMBER,Number of males aged 30 to 34 years in private households - 25% sample data
+BCHACHSAPO,35_39_M_TL,AGE_35_39_MALE_TOTAL,NUMBER,Number of males aged 35 to 39 years in private households - 25% sample data
+BCHACHSAPO,40_44_M_TL,AGE_40_44_MALE_TOTAL,NUMBER,Number of males aged 40 to 44 years in private households - 25% sample data
+BCHACHSAPO,45_49_M_TL,AGE_45_49_MALE_TOTAL,NUMBER,Number of males aged 45 to 49 years in private households - 25% sample data
+BCHACHSAPO,50_54_M_TL,AGE_50_54_MALE_TOTAL,NUMBER,Number of males aged 50 to 54 years in private households - 25% sample data
+BCHACHSAPO,55_59_M_TL,AGE_55_59_MALE_TOTAL,NUMBER,Number of males aged 55 to 59 years in private households - 25% sample data
+BCHACHSAPO,60_64_M_TL,AGE_60_64_MALE_TOTAL,NUMBER,Number of males aged 60 to 64 years in private households - 25% sample data
+BCHACHSAPO,65PLS_M_TL,AGE_65_PLUS_MALE_TOTAL,NUMBER,Number of males aged 65 years and over in private households - 25% sample data
+BCHACHSAPO,65_69_M_TL,AGE_65_69_MALE_TOTAL,NUMBER,Number of males aged 65 to 69 years in private households - 25% sample data
+BCHACHSAPO,70_74_M_TL,AGE_70_74_MALE_TOTAL,NUMBER,Number of males aged 70 to 74 years in private households - 25% sample data
+BCHACHSAPO,75_79_M_TL,AGE_75_79_MALE_TOTAL,NUMBER,Number of males aged 75 to 79 years in private households - 25% sample data
+BCHACHSAPO,80_84_M_TL,AGE_80_84_MALE_TOTAL,NUMBER,Number of males aged 80 to 84 years in private households - 25% sample data
+BCHACHSAPO,85PLS_M_TL,AGE_85_PLUS_MALE_TOTAL,NUMBER,Number of males aged 85 years and over in private households - 25% sample data
+BCHACHSAPO,85_89_M_TL,AGE_85_89_MALE_TOTAL,NUMBER,Number of males aged 85 to 89 years in private households - 25% sample data
+BCHACHSAPO,90_95_M_TL,AGE_90_94_MALE_TOTAL,NUMBER,Number of males aged 90 to 94 years in private households - 25% sample data
+BCHACHSAPO,95_99_M_TL,AGE_95_99_MALE_TOTAL,NUMBER,Number of males aged 95 to 99 years in private households - 25% sample data
+BCHACHSAPO,100_P_M_TL,AGE_100_PLUS_MALE_TOTAL,NUMBER,Number of males aged 100 years and over in private households - 25% sample data
+BCHACHSAPO,GRP_F_TTL,AGE_GROUPS_FEMALE_TOTAL,NUMBER,Total - Age groups of females in private households - 25% sample data
+BCHACHSAPO,0_14_F_TTL,AGE_0_14_FEMALE_TOTAL,NUMBER,Number of females aged 0 to 14 years in private households - 25% sample data
+BCHACHSAPO,0_4_F_TTL,AGE_0_4_FEMALE_TOTAL,NUMBER,Number of females aged 0 to 4 years in private households - 25% sample data
+BCHACHSAPO,5_9_F_TTL,AGE_5_9_FEMALE_TOTAL,NUMBER,Number of females aged 5 to 9 years in private households - 25% sample data
+BCHACHSAPO,10_14_F_TL,AGE_10_14_FEMALE_TOTAL,NUMBER,Number of females aged 10 to 14 years in private households - 25% sample data
+BCHACHSAPO,15_64_F_TL,AGE_15_64_FEMALE_TOTAL,NUMBER,Number of females aged 15 to 64 years in private households - 25% sample data
+BCHACHSAPO,15_19_F_TL,AGE_15_19_FEMALE_TOTAL,NUMBER,Number of females aged 15 to 19 years in private households - 25% sample data
+BCHACHSAPO,20_24_F_TL,AGE_20_24_FEMALE_TOTAL,NUMBER,Number of females aged 20 to 24 years in private households - 25% sample data
+BCHACHSAPO,25_29_F_TL,AGE_25_29_FEMALE_TOTAL,NUMBER,Number of females aged 25 to 29 years in private households - 25% sample data
+BCHACHSAPO,30_34_F_TL,AGE_30_34_FEMALE_TOTAL,NUMBER,Number of females aged 30 to 34 years in private households - 25% sample data
+BCHACHSAPO,35_39_F_TL,AGE_35_39_FEMALE_TOTAL,NUMBER,Number of females aged 35 to 39 years in private households - 25% sample data
+BCHACHSAPO,40_44_F_TL,AGE_40_44_FEMALE_TOTAL,NUMBER,Number of females aged 40 to 44 years in private households - 25% sample data
+BCHACHSAPO,45_49_F_TL,AGE_45_49_FEMALE_TOTAL,NUMBER,Number of females aged 45 to 49 years in private households - 25% sample data
+BCHACHSAPO,50_54_F_TL,AGE_50_54_FEMALE_TOTAL,NUMBER,Number of females aged 50 to 54 years in private households - 25% sample data
+BCHACHSAPO,55_59_F_TL,AGE_55_59_FEMALE_TOTAL,NUMBER,Number of females aged 55 to 59 years in private households - 25% sample data
+BCHACHSAPO,60_64_F_TL,AGE_60_64_FEMALE_TOTAL,NUMBER,Number of females aged 60 to 64 years in private households - 25% sample data
+BCHACHSAPO,65PLS_F_TL,AGE_65_PLUS_FEMALE_TOTAL,NUMBER,Number of females aged 65 years and over in private households - 25% sample data
+BCHACHSAPO,65_69_F_TL,AGE_65_69_FEMALE_TOTAL,NUMBER,Number of females aged 65 to 69 years in private households - 25% sample data
+BCHACHSAPO,70_74_F_TL,AGE_70_74_FEMALE_TOTAL,NUMBER,Number of females aged 70 to 74 years in private households - 25% sample data
+BCHACHSAPO,75_79_F_TL,AGE_75_79_FEMALE_TOTAL,NUMBER,Number of females aged 75 to 79 years in private households - 25% sample data
+BCHACHSAPO,80_84_F_TL,AGE_80_84_FEMALE_TOTAL,NUMBER,Number of females aged 80 to 84 years in private households - 25% sample data
+BCHACHSAPO,85PLS_F_TL,AGE_85_PLUS_FEMALE_TOTAL,NUMBER,Number of females aged 85 years and over in private households - 25% sample data
+BCHACHSAPO,85_89_F_TL,AGE_85_89_FEMALE_TOTAL,NUMBER,Number of females aged 85 to 89 years in private households - 25% sample data
+BCHACHSAPO,90_95_F_TL,AGE_90_94_FEMALE_TOTAL,NUMBER,Number of females aged 90 to 94 years in private households - 25% sample data
+BCHACHSAPO,95_99_F_TL,AGE_95_99_FEMALE_TOTAL,NUMBER,Number of females aged 95 to 99 years in private households - 25% sample data
+BCHACHSAPO,AG_100_PFT,AGE_100_PLUS_FEMALE_TOTAL,NUMBER,Number of females aged 100 years and over in private households - 25% sample data
+BCHACHSAPO,B_GRP_A_TL,AGE_BROAD_GROUPS_ALL_TOTAL,NUMBER,Total - Distribution (%) of the population in private households by broad age groups - 25% sample data
+BCHACHSAPO,AB0_14_A_T,AGE_BROAD_0_14_ALL_TOTAL,NUMBER,Number of people aged 0 to 14 years in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AB15_64A_T,AGE_BROAD_15_64_ALL_TOTAL,NUMBER,Number of people aged 15 to 64 years in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AB65_P_A_T,AGE_BROAD_65_PLUS_ALL_TOTAL,NUMBER,Number of people aged 65 years and over in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AB85_P_A_T,AGE_BROAD_85_PLUS_ALL_TOTAL,NUMBER,Number of people aged 85 years and over in private households (broad age groups) - 25% sample data
+BCHACHSAPO,B_GRP_M_TL,AGE_BROAD_GROUPS_MALE_TOTAL,NUMBER,Total - Distribution (%) of males in private households by broad age groups - 25% sample data
+BCHACHSAPO,AG0_14_M_T,AGE_BROAD_0_14_MALE_TOTAL,NUMBER,Number of males aged 0 to 14 years in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AG15_64M_T,AGE_BROAD_15_64_MALE_TOTAL,NUMBER,Number of males aged 15 to 64 years in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AG_65P_M_T,AGE_BROAD_65_PLUS_MALE_TOTAL,NUMBER,Number of males aged 65 years and over in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AG_85P_M_T,AGE_BROAD_85_PLUS_MALE_TOTAL,NUMBER,Number of males aged 85 years and over in private households (broad age groups) - 25% sample data
+BCHACHSAPO,B_GRP_F_TL,AGE_BROAD_GROUPS_FEMALE_TOTAL,NUMBER,Total - Distribution (%) of females in private households by broad age groups - 25% sample data
+BCHACHSAPO,AG0_14_F_T,AGE_BROAD_0_14_FEMALE_TOTAL,NUMBER,Number of females aged 0 to 14 years in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AG15_64F_T,AGE_BROAD_15_64_FEMALE_TOTAL,NUMBER,Number of females aged 15 to 64 years in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AG_65P_F_T,AGE_BROAD_65_PLUS_FEMALE_TOTAL,NUMBER,Number of females aged 65 years and over in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AG_85P_F_T,AGE_BROAD_85_PLUS_FEMALE_TOTAL,NUMBER,Number of females aged 85 years and over in private households (broad age groups) - 25% sample data
+BCHACHSAPO,AVG_AG_POP,AVERAGE_AGE_OF_POPULATION,NUMBER,Average age of the population in private households - 25% sample data
+BCHACHSAPO,MDN_A_F_PN,MEDIAN_AGE_OF_POPULATION,NUMBER,Median age of the population in private households - 25% sample data
+BCHACHSAPO,AVG_AGE_M,AVERAGE_AGE_OF_MALES,NUMBER,Average age of males in private households - 25% sample data
+BCHACHSAPO,MDN_A_M_PN,MEDIAN_AGE_OF_MALES,NUMBER,Median age of males in private households - 25% sample data
+BCHACHSAPO,AVG_AGE_F,AVERAGE_AGE_OF_FEMALES,NUMBER,Average age of females in private households - 25% sample data
+BCHACHSAPO,MDN_AGE_F,MEDIAN_AGE_OF_FEMALES,NUMBER,Median age of females in private households - 25% sample data
+BCHACHSAPO,FEAT_AREA,FEATURE_AREA_SQM,NUMBER,Is the system calculated area of a two-dimensional polygon in square meters
+BCHACHSAPO,FEAT_LEN,FEATURE_LENGTH_M,NUMBER,Is the system calculated length or perimeter of a geometry in meters
+BCHACHSAPO,SHAPE,SHAPE,SDO_GEOMETRY,Is the column used to reference the spatial coordinates defining the feature.
+BCHACHSAPO,OBJECTID,OBJECTID,NUMBER,Is a required attribute of feature classes and object classes in a geodatabase.
+BCHACHSAPO,X_COORDINATE,,,
+BCHACHSAPO,Y_COORDINATE,,,
+ODHF,index,index,text in CSV; explicitly typed during ETL,Source record identifier in ODHF v1
+ODHF,facility_name,facility_name,text in CSV; explicitly typed during ETL,Facility name as supplied by source provider
+ODHF,source_facility_type,source_facility_type,text in CSV; explicitly typed during ETL,Facility type from the contributing source
+ODHF,odhf_facility_type,odhf_facility_type,text in CSV; explicitly typed during ETL,Harmonized ODHF facility category
+ODHF,provider,provider,text in CSV; explicitly typed during ETL,"Organization that supplied the source record, not necessarily operator/owner"
+ODHF,unit,unit,text in CSV; explicitly typed during ETL,Unit/suite information where available
+ODHF,street_no,street_no,text in CSV; explicitly typed during ETL,Street number
+ODHF,street_name,street_name,text in CSV; explicitly typed during ETL,Street name
+ODHF,postal_code,postal_code,text in CSV; explicitly typed during ETL,Postal code
+ODHF,city,city,text in CSV; explicitly typed during ETL,Reported municipality text
+ODHF,province,province,text in CSV; explicitly typed during ETL,Reported province/territory abbreviation
+ODHF,source_format_str_address,source_format_str_address,text in CSV; explicitly typed during ETL,Source-formatted address
+ODHF,CSDname,CSDname,text in CSV; explicitly typed during ETL,Census subdivision name where populated
+ODHF,CSDuid,CSDuid,text in CSV; explicitly typed during ETL,Census subdivision unique identifier where populated
+ODHF,Pruid,Pruid,text in CSV; explicitly typed during ETL,Province/territory unique identifier
+ODHF,latitude,latitude,text in CSV; explicitly typed during ETL,Latitude in decimal degrees
+ODHF,longitude,longitude,text in CSV; explicitly typed during ETL,Longitude in decimal degrees

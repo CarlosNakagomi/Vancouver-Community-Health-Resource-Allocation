@@ -1,0 +1,49 @@
+# Public-repository exclusions
+data/raw/
+archive/web-prototype/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Power BI temporary / user-local artifacts (retain PBIP/PBIR/TMDL)
+# Obsolete 15 KB blank PBIX shell; the completed report is the PBIP
+powerbi/vch_vancouver_allocation.pbix
+*.pbix.tmp
+*.pbit.tmp
+*.pbix.autorecovery
+~$*.pbix
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Local database runtime sidecars
+*.sqlite-journal
+*.db-journal
+*.db-wal
+*.db-shm
+
+# OS/editor/cache
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
+*.bak
+*.tmp

@@ -1,0 +1,77 @@
+Scenario,CHSA_Code,CHSA_Name,PriorityScore,PriorityRank,SpearmanVsBalanced
+Balanced,3211,Downtown Vancouver,44.74,14,0.9999999999999999
+Balanced,3212,West End,51.71,10,0.9999999999999999
+Balanced,3213,Fairview,26.97,19,0.9999999999999999
+Balanced,3221,Downtown Eastside,53.03,8,0.9999999999999999
+Balanced,3222,Northeast False Creek,59.74,5,0.9999999999999999
+Balanced,3223,Grandview-Woodland,40.0,16,0.9999999999999999
+Balanced,3231,Cedar Cottage,31.84,18,0.9999999999999999
+Balanced,3232,Hastings-Sunrise,61.58,4,0.9999999999999999
+Balanced,3233,Renfrew-Collingwood,56.97,6,0.9999999999999999
+Balanced,3241,Shaughnessy/Arbutus Ridge/Kerrisdale,56.71,7,0.9999999999999999
+Balanced,3242,West Point Grey/Dunbar-Southlands,70.92,2,0.9999999999999999
+Balanced,3244,Kitsilano,48.29,12,0.9999999999999999
+Balanced,3251,Kensington,51.31,11,0.9999999999999999
+Balanced,3252,Mount Pleasant,33.95,17,0.9999999999999999
+Balanced,3253,South Cambie/Riley Park,41.58,15,0.9999999999999999
+Balanced,3261,Killarney,53.03,8,0.9999999999999999
+Balanced,3262,Oakridge/Marpole,63.42,3,0.9999999999999999
+Balanced,3263,Sunset,76.97,1,0.9999999999999999
+Balanced,3264,Victoria-Fraserview,47.24,13,0.9999999999999999
+Need-focused,3211,Downtown Vancouver,32.9,17,0.8688021898246626
+Need-focused,3212,West End,45.0,14,0.8688021898246626
+Need-focused,3213,Fairview,27.37,18,0.8688021898246626
+Need-focused,3221,Downtown Eastside,46.32,12,0.8688021898246626
+Need-focused,3222,Northeast False Creek,48.68,10,0.8688021898246626
+Need-focused,3223,Grandview-Woodland,36.84,15,0.8688021898246626
+Need-focused,3231,Cedar Cottage,36.58,16,0.8688021898246626
+Need-focused,3232,Hastings-Sunrise,64.74,4,0.8688021898246626
+Need-focused,3233,Renfrew-Collingwood,52.63,8,0.8688021898246626
+Need-focused,3241,Shaughnessy/Arbutus Ridge/Kerrisdale,66.58,3,0.8688021898246626
+Need-focused,3242,West Point Grey/Dunbar-Southlands,83.16,1,0.8688021898246626
+Need-focused,3244,Kitsilano,47.9,11,0.8688021898246626
+Need-focused,3251,Kensington,50.52,9,0.8688021898246626
+Need-focused,3252,Mount Pleasant,26.05,19,0.8688021898246626
+Need-focused,3253,South Cambie/Riley Park,46.31,13,0.8688021898246626
+Need-focused,3261,Killarney,63.68,6,0.8688021898246626
+Need-focused,3262,Oakridge/Marpole,64.21,5,0.8688021898246626
+Need-focused,3263,Sunset,75.79,2,0.8688021898246626
+Need-focused,3264,Victoria-Fraserview,54.74,7,0.8688021898246626
+Uncertainty-aware,3211,Downtown Vancouver,52.63,9,0.9179465561177749
+Uncertainty-aware,3212,West End,56.18,8,0.9179465561177749
+Uncertainty-aware,3213,Fairview,26.71,19,0.9179465561177749
+Uncertainty-aware,3221,Downtown Eastside,57.5,7,0.9179465561177749
+Uncertainty-aware,3222,Northeast False Creek,67.11,2,0.9179465561177749
+Uncertainty-aware,3223,Grandview-Woodland,42.11,15,0.9179465561177749
+Uncertainty-aware,3231,Cedar Cottage,28.68,18,0.9179465561177749
+Uncertainty-aware,3232,Hastings-Sunrise,59.47,6,0.9179465561177749
+Uncertainty-aware,3233,Renfrew-Collingwood,59.87,5,0.9179465561177749
+Uncertainty-aware,3241,Shaughnessy/Arbutus Ridge/Kerrisdale,50.13,11,0.9179465561177749
+Uncertainty-aware,3242,West Point Grey/Dunbar-Southlands,62.76,4,0.9179465561177749
+Uncertainty-aware,3244,Kitsilano,48.55,12,0.9179465561177749
+Uncertainty-aware,3251,Kensington,51.84,10,0.9179465561177749
+Uncertainty-aware,3252,Mount Pleasant,39.21,16,0.9179465561177749
+Uncertainty-aware,3253,South Cambie/Riley Park,38.42,17,0.9179465561177749
+Uncertainty-aware,3261,Killarney,45.92,13,0.9179465561177749
+Uncertainty-aware,3262,Oakridge/Marpole,62.89,3,0.9179465561177749
+Uncertainty-aware,3263,Sunset,77.76,1,0.9179465561177749
+Uncertainty-aware,3264,Victoria-Fraserview,42.24,14,0.9179465561177749
+Supply-gap-focused,3211,Downtown Vancouver,44.74,12,0.892496795001699
+Supply-gap-focused,3212,West End,56.71,7,0.892496795001699
+Supply-gap-focused,3213,Fairview,19.34,19,0.892496795001699
+Supply-gap-focused,3221,Downtown Eastside,39.61,15,0.892496795001699
+Supply-gap-focused,3222,Northeast False Creek,67.63,3,0.892496795001699
+Supply-gap-focused,3223,Grandview-Woodland,40.0,14,0.892496795001699
+Supply-gap-focused,3231,Cedar Cottage,28.16,18,0.892496795001699
+Supply-gap-focused,3232,Hastings-Sunrise,62.63,5,0.892496795001699
+Supply-gap-focused,3233,Renfrew-Collingwood,50.39,10,0.892496795001699
+Supply-gap-focused,3241,Shaughnessy/Arbutus Ridge/Kerrisdale,55.92,9,0.892496795001699
+Supply-gap-focused,3242,West Point Grey/Dunbar-Southlands,78.55,2,0.892496795001699
+Supply-gap-focused,3244,Kitsilano,56.97,6,0.892496795001699
+Supply-gap-focused,3251,Kensington,45.53,11,0.892496795001699
+Supply-gap-focused,3252,Mount Pleasant,30.26,17,0.892496795001699
+Supply-gap-focused,3253,South Cambie/Riley Park,32.1,16,0.892496795001699
+Supply-gap-focused,3261,Killarney,56.45,8,0.892496795001699
+Supply-gap-focused,3262,Oakridge/Marpole,65.0,4,0.892496795001699
+Supply-gap-focused,3263,Sunset,78.82,1,0.892496795001699
+Supply-gap-focused,3264,Victoria-Fraserview,41.18,13,0.892496795001699

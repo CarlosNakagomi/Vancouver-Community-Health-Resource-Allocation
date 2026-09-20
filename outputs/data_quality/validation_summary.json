@@ -1,0 +1,71 @@
+{
+  "passed": 13,
+  "failed": 0,
+  "tests": [
+    {
+      "test": "Vancouver CHSA count",
+      "status": "PASS",
+      "detail": "expected 19, found 19"
+    },
+    {
+      "test": "CHSA primary key unique",
+      "status": "PASS",
+      "detail": "CH_SA_CODE unique"
+    },
+    {
+      "test": "UBC excluded",
+      "status": "PASS",
+      "detail": "CHSA 3243 is outside Vancouver CSD"
+    },
+    {
+      "test": "Partial boundary flagged",
+      "status": "PASS",
+      "detail": "CHSA 3242 overlap below 90%"
+    },
+    {
+      "test": "Facility key unique",
+      "status": "PASS",
+      "detail": "CanonicalFacilityID unique"
+    },
+    {
+      "test": "Facility referential integrity",
+      "status": "PASS",
+      "detail": "all mapped facility CHSAs exist"
+    },
+    {
+      "test": "No null spatial assignments",
+      "status": "PASS",
+      "detail": "null assignments=0"
+    },
+    {
+      "test": "Score ranges",
+      "status": "PASS",
+      "detail": "all scores 0-100"
+    },
+    {
+      "test": "Budget reconciles",
+      "status": "PASS",
+      "detail": "sum=10000000.00"
+    },
+    {
+      "test": "Clinical FTE reconciles",
+      "status": "PASS",
+      "detail": "sum=50.0"
+    },
+    {
+      "test": "Community care reconciles",
+      "status": "PASS",
+      "detail": "sum=1000"
+    },
+    {
+      "test": "Sensitivity complete",
+      "status": "PASS",
+      "detail": "rows=76"
+    },
+    {
+      "test": "Population total stable",
+      "status": "PASS",
+      "detail": "2016 source total across 19 included CHSAs=663894"
+    }
+  ]
+}

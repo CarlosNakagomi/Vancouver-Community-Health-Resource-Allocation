@@ -1,0 +1,250 @@
+table DimFacility
+	lineageTag: 2cd82fdc-bc54-4130-b046-dfb9cb1830c7
+
+	column index
+		dataType: string
+		isHidden
+		lineageTag: 15610f3b-e978-4921-90e5-838ef883014d
+		summarizeBy: none
+		sourceColumn: index
+
+		annotation SummarizationSetBy = Automatic
+
+	column facility_name
+		dataType: string
+		lineageTag: d53fe04c-9020-4fd3-889c-9de835437824
+		summarizeBy: none
+		sourceColumn: facility_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_facility_type
+		dataType: string
+		isHidden
+		lineageTag: 5771a351-de32-4389-99c7-4c35f8185d5a
+		summarizeBy: none
+		sourceColumn: source_facility_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column odhf_facility_type
+		dataType: string
+		lineageTag: 432db3fd-d029-49e3-840e-87b79627679f
+		summarizeBy: none
+		sourceColumn: odhf_facility_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider
+		dataType: string
+		lineageTag: 43b21655-057c-4197-8d1b-7c31ad2b5978
+		summarizeBy: none
+		sourceColumn: provider
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit
+		dataType: string
+		lineageTag: 8095e3ff-f9db-47f2-973b-6be104d8f2af
+		summarizeBy: none
+		sourceColumn: unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_no
+		dataType: string
+		lineageTag: dea4f6e9-eee5-4130-bf6c-27e576e0dc1f
+		summarizeBy: none
+		sourceColumn: street_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_name
+		dataType: string
+		lineageTag: 1d84804f-1cad-4c60-b124-c7a48a69886e
+		summarizeBy: none
+		sourceColumn: street_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column postal_code
+		dataType: string
+		lineageTag: 2d29efab-5737-442c-887d-68f62d9a7df2
+		summarizeBy: none
+		sourceColumn: postal_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 39ebfc4b-ae1a-40e5-b82c-ce1896e5ff27
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column province
+		dataType: string
+		lineageTag: dc88c951-9dfb-4f37-bc48-80c3c382f83e
+		summarizeBy: none
+		sourceColumn: province
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_format_str_address
+		dataType: string
+		lineageTag: 0f7495fb-678e-4dfa-bda6-b548ca8db8b9
+		summarizeBy: none
+		sourceColumn: source_format_str_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column CSDname
+		dataType: string
+		isHidden
+		lineageTag: 843e0ee7-e038-4842-b725-8405c0e60339
+		summarizeBy: none
+		sourceColumn: CSDname
+
+		annotation SummarizationSetBy = Automatic
+
+	column CSDuid
+		dataType: string
+		isHidden
+		lineageTag: 2a9bdd94-7153-42ca-a6ac-143e7d0a14da
+		summarizeBy: none
+		sourceColumn: CSDuid
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pruid
+		dataType: string
+		isHidden
+		lineageTag: 2cf5830a-fa60-4a73-b22c-282b25942537
+		summarizeBy: none
+		sourceColumn: Pruid
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: 698684fd-b06b-42a4-b12f-c531d9601aaa
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: a53d685c-c8f1-41f5-9f12-f5b680ce144a
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column province_normalized
+		dataType: string
+		isHidden
+		lineageTag: bce03907-6c71-4106-8f4d-d2d47201c594
+		summarizeBy: none
+		sourceColumn: province_normalized
+
+		annotation SummarizationSetBy = Automatic
+
+	column city_normalized
+		dataType: string
+		isHidden
+		lineageTag: 0e32ad32-4c48-49d2-9e8a-9a39233fd3b1
+		summarizeBy: none
+		sourceColumn: city_normalized
+
+		annotation SummarizationSetBy = Automatic
+
+	column facility_name_normalized
+		dataType: string
+		isHidden
+		lineageTag: d9f48fe8-bd4f-4092-ae2a-866cb9a40043
+		summarizeBy: none
+		sourceColumn: facility_name_normalized
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_record_id
+		dataType: string
+		isHidden
+		lineageTag: 0089a6a8-0927-4f6f-af6d-f0e9048d4bcc
+		summarizeBy: none
+		sourceColumn: source_record_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column InsideVancouverCSD2016
+		dataType: string
+		isHidden
+		lineageTag: 49f4e0f2-863f-4611-a6f6-67d37678d792
+		summarizeBy: none
+		sourceColumn: InsideVancouverCSD2016
+
+		annotation SummarizationSetBy = Automatic
+
+	column CMNTY_HLTH_SERV_AREA_CODE
+		dataType: string
+		lineageTag: 7873ee03-9f28-423e-8538-04809d13eaac
+		summarizeBy: none
+		sourceColumn: CMNTY_HLTH_SERV_AREA_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CMNTY_HLTH_SERV_AREA_NAME
+		dataType: string
+		lineageTag: 6ac18999-a999-423c-bc8f-ba75f5dd995d
+		summarizeBy: none
+		sourceColumn: CMNTY_HLTH_SERV_AREA_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpatialAssignmentStatus
+		dataType: string
+		isHidden
+		lineageTag: 213ea35c-93a0-4c9c-9caf-45e00138e1ad
+		summarizeBy: none
+		sourceColumn: SpatialAssignmentStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column CanonicalFacilityID
+		dataType: string
+		lineageTag: 73a7d4ae-5c41-4c86-b4f6-301c6071c93f
+		summarizeBy: none
+		sourceColumn: CanonicalFacilityID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceRecordCount
+		dataType: string
+		isHidden
+		lineageTag: 8bd5707a-0319-4443-85f9-7bc8c627dd47
+		summarizeBy: none
+		sourceColumn: SourceRecordCount
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimFacility = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(pProjectRoot & "\\data\\processed\\dim_facility.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers,{{"CanonicalFacilityID",type text},{"facility_name",type text},{"odhf_facility_type",type text},{"latitude",type number},{"longitude",type number},{"CMNTY_HLTH_SERV_AREA_CODE",type text}}),
+				    Unique = Table.Distinct(Typed,{"CanonicalFacilityID"})
+				in
+				    Unique
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

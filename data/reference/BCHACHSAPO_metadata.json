@@ -1,0 +1,880 @@
+[
+	{
+		"title" : "Census Age Profiles for Community Health Service Areas - 2016 Census",
+		"name" : "census-age-profiles-for-community-health-service-areas-2016-census",
+		"bcdc_data_resource_url" : "https://catalogue.data.gov.bc.ca/dataset/da8d93a5-a6b0-4f07-80e5-1a1ec3776595",
+		"description" : "Age characteristics in private households by sex and age groups (25% sample data). 2016 Census profile data at the Community Health Service Areas (CHSA) level.",
+		"purpose" : "",
+		"bcdc_type" : "Geographic",
+		"last_modified" : "2023-04-01T00:03:10",
+		"resource_storage_location" : "Bc Geographic Warehouse",
+		"object_name" : "WHSE_HUMAN_CULTURAL_ECONOMIC.BCHA_CHSA_POPULATION_AGE_PH_SV",
+		"object_short_name" : "BCHACHSAPO",
+		"object_table_comments" : "Age characteristics in private households by sex and age groups (25% sample data).",
+		"projection_name" : "epsg3005",
+		"license_title" : "Statistics Canada Open Licence",
+		"license_url" : "https://www.statcan.gc.ca/eng/reference/licence",
+		"details" : [
+			{
+				"column_comments" : "Is the number of the Community Health Service Area, e.g., 1220, 2223, 4252.",
+				"column_name" : "CMNTY_HLTH_SERV_AREA_CODE",
+				"data_precision" : 4,
+				"data_type" : "CHAR",
+				"short_name" : "CH_SA_CODE"
+			},
+			{
+				"column_comments" : "Is the name of the Community Health Service Area, e.g., Nelson, Burnaby Southwest, Qualicum Beach.",
+				"column_name" : "CMNTY_HLTH_SERV_AREA_NAME",
+				"data_precision" : 254,
+				"data_type" : "VARCHAR2",
+				"short_name" : "CH_SA_NAME"
+			},
+			{
+				"column_comments" : "Is the class of the Community Heath Service Area, e.g., 6 Rural, 1 Metro, 4  Urban/Rural.",
+				"column_name" : "CHSA_URBAN_RURAL_CLASS",
+				"data_precision" : 30,
+				"data_type" : "VARCHAR2",
+				"short_name" : "CHSRBRL_CL"
+			},
+			{
+				"column_comments" : "Is the population of the Community Health Service Area base on census values.",
+				"column_name" : "CHSA_POPULATION_CENSUS",
+				"data_precision" : 5,
+				"data_type" : "NUMBER",
+				"short_name" : "CHSPOP_CEN"
+			},
+			{
+				"column_comments" : "Is the number of the Local Health Area, e.g., 122, 222, 425.",
+				"column_name" : "LOCAL_HLTH_AREA_CODE",
+				"data_precision" : 3,
+				"data_type" : "CHAR",
+				"short_name" : "HLT_A_CODE"
+			},
+			{
+				"column_comments" : "Is the name of the Local Health Area, e.g., Nelson, Burnaby, Oceanside.",
+				"column_name" : "LOCAL_HLTH_AREA_NAME",
+				"data_precision" : 254,
+				"data_type" : "VARCHAR2",
+				"short_name" : "HLT_A_NAME"
+			},
+			{
+				"column_comments" : "Is the number of the Health Service Delivery Area, e.g., 12, 22, 42.",
+				"column_name" : "HLTH_SERVICE_DLVR_AREA_CODE",
+				"data_precision" : 2,
+				"data_type" : "CHAR",
+				"short_name" : "HSD_A_CODE"
+			},
+			{
+				"column_comments" : "Is the name of the Health Service Delivery Area, e.g., Kootenay Boundary, Fraser North, Central Vancouver Island.",
+				"column_name" : "HLTH_SERVICE_DLVR_AREA_NAME",
+				"data_precision" : 254,
+				"data_type" : "VARCHAR2",
+				"short_name" : "HSD_A_NAME"
+			},
+			{
+				"column_comments" : "Is the number and acronymn of the Health Service Delivery Area, e.g., 12 KB, 22 FN, 42 CVI.",
+				"column_name" : "HLTH_SERVICE_DLVR_AREA_ID",
+				"data_precision" : 10,
+				"data_type" : "VARCHAR2",
+				"short_name" : "HSDA_ID"
+			},
+			{
+				"column_comments" : "Is the number of the Health Authority, e.g., 1, 2, 3, 4, 5.",
+				"column_name" : "HLTH_AUTHORITY_CODE",
+				"data_precision" : 1,
+				"data_type" : "CHAR",
+				"short_name" : "HAUTH_CODE"
+			},
+			{
+				"column_comments" : "Is the name of the Health Authority, e.g., Interior, Fraser, Vancouver Coastal, Vancouver Island, Northern.",
+				"column_name" : "HLTH_AUTHORITY_NAME",
+				"data_precision" : 254,
+				"data_type" : "VARCHAR2",
+				"short_name" : "HAUTH_NAME"
+			},
+			{
+				"column_comments" : "Is the number and acronymn of the Health Authority, e.g., 1 IHA, 2 FHA, 3 VCH, 4 VIH, 5 NHA.",
+				"column_name" : "HLTH_AUTHORITY_ID",
+				"data_precision" : 10,
+				"data_type" : "VARCHAR2",
+				"short_name" : "HAUTH_ID"
+			},
+			{
+				"column_comments" : "The data quality flags for this region for census short form results, e.g., 00100",
+				"column_name" : "SHORT_FORM_DQF",
+				"data_precision" : 5,
+				"data_type" : "CHAR",
+				"short_name" : "SH_FRM_DQF"
+			},
+			{
+				"column_comments" : "The data quality flags for this region for census long form results, e.g., 00100",
+				"column_name" : "LONG_FORM_DQF",
+				"data_precision" : 5,
+				"data_type" : "CHAR",
+				"short_name" : "LG_FRM_DFQ"
+			},
+			{
+				"column_comments" : "The global non-response percentage for this region for the census short form.",
+				"column_name" : "SHORT_FORM_GNR",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "SH_FRM_GNR"
+			},
+			{
+				"column_comments" : "The global non-response percentage for this region for the census long form.",
+				"column_name" : "LONG_FORM_GNR",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "LG_FRM_GNR"
+			},
+			{
+				"column_comments" : "Total - Persons not in census families in private households - 100% data",
+				"column_name" : "NOTIN_PRIV_HSHLD_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "NIPH_TTL"
+			},
+			{
+				"column_comments" : "Total - Males not in census families in private households - 100% data",
+				"column_name" : "NOTIN_PRIV_HSHLD_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "NIPH_M_TTL"
+			},
+			{
+				"column_comments" : "Total - Females not in census families in private households - 100% data",
+				"column_name" : "NOTIN_PRIV_HSHLD_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "NIPH_F_TTL"
+			},
+			{
+				"column_comments" : "Total - Age groups of the population in private households - 25% sample data",
+				"column_name" : "AGE_GROUPS_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "GRP_A_TTL"
+			},
+			{
+				"column_comments" : "Number of people aged 0 to 14 years in private households - 25% sample data",
+				"column_name" : "AGE_0_14_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "0_14_A_TTL"
+			},
+			{
+				"column_comments" : "Number of people aged 0 to 4 years in private households - 25% sample data",
+				"column_name" : "AGE_0_4_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "0_4_A_TTL"
+			},
+			{
+				"column_comments" : "Number of people aged 5 to 9 years in private households - 25% sample data",
+				"column_name" : "AGE_5_9_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "5_9_A_TTL"
+			},
+			{
+				"column_comments" : "Number of people aged 10 to 14 years in private households - 25% sample data",
+				"column_name" : "AGE_10_14_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "10_14_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 15 to 64 years in private households - 25% sample data",
+				"column_name" : "AGE_15_64_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "15_64_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 15 to 19 years in private households - 25% sample data",
+				"column_name" : "AGE_15_19_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "15_19_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 20 to 24 years in private households - 25% sample data",
+				"column_name" : "AGE_20_24_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "20_24_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 25 to 29 years in private households - 25% sample data",
+				"column_name" : "AGE_25_29_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "25_29_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 30 to 34 years in private households - 25% sample data",
+				"column_name" : "AGE_30_34_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "30_34_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 35 to 39 years in private households - 25% sample data",
+				"column_name" : "AGE_35_39_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "35_39_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 40 to 44 years in private households - 25% sample data",
+				"column_name" : "AGE_40_44_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "40_44_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 45 to 49 years in private households - 25% sample data",
+				"column_name" : "AGE_45_49_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "45_49_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 50 to 54 years in private households - 25% sample data",
+				"column_name" : "AGE_50_54_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "50_54_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 55 to 59 years in private households - 25% sample data",
+				"column_name" : "AGE_55_59_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "55_59_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 60 to 64 years in private households - 25% sample data",
+				"column_name" : "AGE_60_64_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "60_64_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 65 years and over in private households - 25% sample data",
+				"column_name" : "AGE_65_PLUS_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "65PLS_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 65 to 69 years in private households - 25% sample data",
+				"column_name" : "AGE_65_69_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "65_69_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 70 to 74 years in private households - 25% sample data",
+				"column_name" : "AGE_70_74_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "70_74_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 75 to 79 years in private households - 25% sample data",
+				"column_name" : "AGE_75_79_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "75_79_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 80 to 84 years in private households - 25% sample data",
+				"column_name" : "AGE_80_84_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "80_84_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 85 years and over in private households - 25% sample data",
+				"column_name" : "AGE_85_PLUS_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "85PLS_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 85 to 89 years in private households - 25% sample data",
+				"column_name" : "AGE_85_89_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "85_89_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 90 to 94 years in private households - 25% sample data",
+				"column_name" : "AGE_90_94_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "90_94_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 95 to 99 years in private households - 25% sample data",
+				"column_name" : "AGE_95_99_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "95_99_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 100 years and over in private households - 25% sample data",
+				"column_name" : "AGE_100_PLUS_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "100_PLS_TL"
+			},
+			{
+				"column_comments" : "Total - Age groups of males in private households - 25% sample data",
+				"column_name" : "AGE_GROUPS_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "GRP_M_TTL"
+			},
+			{
+				"column_comments" : "Number of males aged 0 to 14 years in private households - 25% sample data",
+				"column_name" : "AGE_0_14_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "0_14_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 0 to 4 years in private households - 25% sample data",
+				"column_name" : "AGE_0_4_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "0_4_M_TTL"
+			},
+			{
+				"column_comments" : "Number of males aged 5 to 9 years in private households - 25% sample data",
+				"column_name" : "AGE_5_9_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "5_9_M_TTL"
+			},
+			{
+				"column_comments" : "Number of males aged 10 to 14 years in private households - 25% sample data",
+				"column_name" : "AGE_10_14_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "10_14_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 15 to 64 years in private households - 25% sample data",
+				"column_name" : "AGE_15_64_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "15_64_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 15 to 19 years in private households - 25% sample data",
+				"column_name" : "AGE_15_19_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "15_19_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 20 to 24 years in private households - 25% sample data",
+				"column_name" : "AGE_20_24_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "20_24_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 25 to 29 years in private households - 25% sample data",
+				"column_name" : "AGE_25_29_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "25_29_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 30 to 34 years in private households - 25% sample data",
+				"column_name" : "AGE_30_34_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "30_34_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 35 to 39 years in private households - 25% sample data",
+				"column_name" : "AGE_35_39_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "35_39_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 40 to 44 years in private households - 25% sample data",
+				"column_name" : "AGE_40_44_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "40_44_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 45 to 49 years in private households - 25% sample data",
+				"column_name" : "AGE_45_49_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "45_49_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 50 to 54 years in private households - 25% sample data",
+				"column_name" : "AGE_50_54_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "50_54_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 55 to 59 years in private households - 25% sample data",
+				"column_name" : "AGE_55_59_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "55_59_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 60 to 64 years in private households - 25% sample data",
+				"column_name" : "AGE_60_64_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "60_64_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 65 years and over in private households - 25% sample data",
+				"column_name" : "AGE_65_PLUS_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "65PLS_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 65 to 69 years in private households - 25% sample data",
+				"column_name" : "AGE_65_69_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "65_69_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 70 to 74 years in private households - 25% sample data",
+				"column_name" : "AGE_70_74_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "70_74_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 75 to 79 years in private households - 25% sample data",
+				"column_name" : "AGE_75_79_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "75_79_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 80 to 84 years in private households - 25% sample data",
+				"column_name" : "AGE_80_84_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "80_84_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 85 years and over in private households - 25% sample data",
+				"column_name" : "AGE_85_PLUS_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "85PLS_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 85 to 89 years in private households - 25% sample data",
+				"column_name" : "AGE_85_89_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "85_89_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 90 to 94 years in private households - 25% sample data",
+				"column_name" : "AGE_90_94_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "90_95_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 95 to 99 years in private households - 25% sample data",
+				"column_name" : "AGE_95_99_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "95_99_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 100 years and over in private households - 25% sample data",
+				"column_name" : "AGE_100_PLUS_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "100_P_M_TL"
+			},
+			{
+				"column_comments" : "Total - Age groups of females in private households - 25% sample data",
+				"column_name" : "AGE_GROUPS_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "GRP_F_TTL"
+			},
+			{
+				"column_comments" : "Number of females aged 0 to 14 years in private households - 25% sample data",
+				"column_name" : "AGE_0_14_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "0_14_F_TTL"
+			},
+			{
+				"column_comments" : "Number of females aged 0 to 4 years in private households - 25% sample data",
+				"column_name" : "AGE_0_4_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "0_4_F_TTL"
+			},
+			{
+				"column_comments" : "Number of females aged 5 to 9 years in private households - 25% sample data",
+				"column_name" : "AGE_5_9_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "5_9_F_TTL"
+			},
+			{
+				"column_comments" : "Number of females aged 10 to 14 years in private households - 25% sample data",
+				"column_name" : "AGE_10_14_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "10_14_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 15 to 64 years in private households - 25% sample data",
+				"column_name" : "AGE_15_64_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "15_64_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 15 to 19 years in private households - 25% sample data",
+				"column_name" : "AGE_15_19_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "15_19_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 20 to 24 years in private households - 25% sample data",
+				"column_name" : "AGE_20_24_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "20_24_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 25 to 29 years in private households - 25% sample data",
+				"column_name" : "AGE_25_29_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "25_29_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 30 to 34 years in private households - 25% sample data",
+				"column_name" : "AGE_30_34_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "30_34_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 35 to 39 years in private households - 25% sample data",
+				"column_name" : "AGE_35_39_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "35_39_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 40 to 44 years in private households - 25% sample data",
+				"column_name" : "AGE_40_44_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "40_44_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 45 to 49 years in private households - 25% sample data",
+				"column_name" : "AGE_45_49_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "45_49_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 50 to 54 years in private households - 25% sample data",
+				"column_name" : "AGE_50_54_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "50_54_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 55 to 59 years in private households - 25% sample data",
+				"column_name" : "AGE_55_59_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "55_59_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 60 to 64 years in private households - 25% sample data",
+				"column_name" : "AGE_60_64_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "60_64_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 65 years and over in private households - 25% sample data",
+				"column_name" : "AGE_65_PLUS_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "65PLS_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 65 to 69 years in private households - 25% sample data",
+				"column_name" : "AGE_65_69_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "65_69_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 70 to 74 years in private households - 25% sample data",
+				"column_name" : "AGE_70_74_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "70_74_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 75 to 79 years in private households - 25% sample data",
+				"column_name" : "AGE_75_79_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "75_79_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 80 to 84 years in private households - 25% sample data",
+				"column_name" : "AGE_80_84_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "80_84_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 85 years and over in private households - 25% sample data",
+				"column_name" : "AGE_85_PLUS_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "85PLS_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 85 to 89 years in private households - 25% sample data",
+				"column_name" : "AGE_85_89_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "85_89_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 90 to 94 years in private households - 25% sample data",
+				"column_name" : "AGE_90_94_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "90_95_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 95 to 99 years in private households - 25% sample data",
+				"column_name" : "AGE_95_99_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "95_99_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 100 years and over in private households - 25% sample data",
+				"column_name" : "AGE_100_PLUS_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG_100_PFT"
+			},
+			{
+				"column_comments" : "Total - Distribution (%) of the population in private households by broad age groups - 25% sample data",
+				"column_name" : "AGE_BROAD_GROUPS_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "B_GRP_A_TL"
+			},
+			{
+				"column_comments" : "Number of people aged 0 to 14 years in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_0_14_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AB0_14_A_T"
+			},
+			{
+				"column_comments" : "Number of people aged 15 to 64 years in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_15_64_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AB15_64A_T"
+			},
+			{
+				"column_comments" : "Number of people aged 65 years and over in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_65_PLUS_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AB65_P_A_T"
+			},
+			{
+				"column_comments" : "Number of people aged 85 years and over in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_85_PLUS_ALL_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AB85_P_A_T"
+			},
+			{
+				"column_comments" : "Total - Distribution (%) of males in private households by broad age groups - 25% sample data",
+				"column_name" : "AGE_BROAD_GROUPS_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "B_GRP_M_TL"
+			},
+			{
+				"column_comments" : "Number of males aged 0 to 14 years in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_0_14_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG0_14_M_T"
+			},
+			{
+				"column_comments" : "Number of males aged 15 to 64 years in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_15_64_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG15_64M_T"
+			},
+			{
+				"column_comments" : "Number of males aged 65 years and over in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_65_PLUS_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG_65P_M_T"
+			},
+			{
+				"column_comments" : "Number of males aged 85 years and over in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_85_PLUS_MALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG_85P_M_T"
+			},
+			{
+				"column_comments" : "Total - Distribution (%) of females in private households by broad age groups - 25% sample data",
+				"column_name" : "AGE_BROAD_GROUPS_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "B_GRP_F_TL"
+			},
+			{
+				"column_comments" : "Number of females aged 0 to 14 years in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_0_14_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG0_14_F_T"
+			},
+			{
+				"column_comments" : "Number of females aged 15 to 64 years in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_15_64_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG15_64F_T"
+			},
+			{
+				"column_comments" : "Number of females aged 65 years and over in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_65_PLUS_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG_65P_F_T"
+			},
+			{
+				"column_comments" : "Number of females aged 85 years and over in private households (broad age groups) - 25% sample data",
+				"column_name" : "AGE_BROAD_85_PLUS_FEMALE_TOTAL",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AG_85P_F_T"
+			},
+			{
+				"column_comments" : "Average age of the population in private households - 25% sample data",
+				"column_name" : "AVERAGE_AGE_OF_POPULATION",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AVG_AG_POP"
+			},
+			{
+				"column_comments" : "Median age of the population in private households - 25% sample data",
+				"column_name" : "MEDIAN_AGE_OF_POPULATION",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "MDN_A_F_PN"
+			},
+			{
+				"column_comments" : "Average age of males in private households - 25% sample data",
+				"column_name" : "AVERAGE_AGE_OF_MALES",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AVG_AGE_M"
+			},
+			{
+				"column_comments" : "Median age of males in private households - 25% sample data",
+				"column_name" : "MEDIAN_AGE_OF_MALES",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "MDN_A_M_PN"
+			},
+			{
+				"column_comments" : "Average age of females in private households - 25% sample data",
+				"column_name" : "AVERAGE_AGE_OF_FEMALES",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "AVG_AGE_F"
+			},
+			{
+				"column_comments" : "Median age of females in private households - 25% sample data",
+				"column_name" : "MEDIAN_AGE_OF_FEMALES",
+				"data_precision" : 10,
+				"data_type" : "NUMBER",
+				"short_name" : "MDN_AGE_F"
+			},
+			{
+				"column_comments" : "Is the system calculated area of a two-dimensional polygon in square meters",
+				"column_name" : "FEATURE_AREA_SQM",
+				"data_precision" : 19,
+				"data_type" : "NUMBER",
+				"short_name" : "FEAT_AREA"
+			},
+			{
+				"column_comments" : "Is the system calculated length or perimeter of a geometry in meters",
+				"column_name" : "FEATURE_LENGTH_M",
+				"data_precision" : 19,
+				"data_type" : "NUMBER",
+				"short_name" : "FEAT_LEN"
+			},
+			{
+				"column_comments" : "Is the column used to reference the spatial coordinates defining the feature.",
+				"column_name" : "SHAPE",
+				"data_precision" : 64,
+				"data_type" : "SDO_GEOMETRY",
+				"short_name" : "SHAPE"
+			},
+			{
+				"column_comments" : "Is a required attribute of feature classes and object classes in a geodatabase.",
+				"column_name" : "OBJECTID",
+				"data_precision" : 38,
+				"data_type" : "NUMBER",
+				"short_name" : "OBJECTID"
+			},
+			{
+				"column_comments" : "Is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data",
+				"column_name" : "SE_ANNO_CAD_DATA",
+				"data_precision" : 4000,
+				"data_type" : "BLOB"
+			}
+		]
+	}
+]

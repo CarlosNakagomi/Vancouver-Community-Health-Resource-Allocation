@@ -1,0 +1,236 @@
+table _Measures
+	lineageTag: 4e5d491e-e0ed-4797-885a-199bc7039eca
+
+	measure 'Total Population' = SUM ( 'FactCommunityProfile'[CHSPOP_CEN] )
+		formatString: 0.0
+		displayFolder: Core metrics
+		lineageTag: 2d64b718-ad4f-47d6-b471-b45faa6e6906
+
+	measure 'Total Facilities' = SUM ( 'FactFacilitySupply'[FacilityCount] )
+		displayFolder: Core metrics
+		lineageTag: 183de880-337d-402d-bf13-7a210a66bc60
+
+	measure 'Total CHSAs' = DISTINCTCOUNT ( DimCHSA[CHSA Code] )
+		displayFolder: Core metrics
+		lineageTag: 644d57d6-d646-434a-941a-66b997e42cbd
+
+	measure 'Facilities per 10K Population' = DIVIDE ( [Total Facilities] * 10000, [Total Population] )
+		formatString: 0.00
+		displayFolder: Core metrics
+		lineageTag: a124bb7b-5ae9-4269-aaa0-a14f0a2b88d0
+
+	measure 'Population per Facility' = DIVIDE ( [Total Population], [Total Facilities] )
+		displayFolder: Core metrics
+		lineageTag: c656a40c-9727-4522-8310-c27c38676c19
+
+	measure 'Youth Population' = SUM ( 'FactCommunityProfile'[0_14_A_TTL] )
+		displayFolder: Core metrics
+		lineageTag: 4ceb5b63-d1a7-41b5-b840-9982d8d1a0c6
+
+	measure 'Senior Population' = SUM ( 'FactCommunityProfile'[65PLS_A_TL] )
+		displayFolder: Core metrics
+		lineageTag: dd817e9f-b7fb-4187-bf12-9e05a8913884
+
+	measure 'Age Sample Population' = SUM ( 'FactCommunityProfile'[GRP_A_TTL] )
+		displayFolder: Core metrics
+		lineageTag: 6aa16dfe-27f1-4b3e-b727-a84e03d152f2
+
+	measure 'Youth %' = DIVIDE ( [Youth Population], [Age Sample Population] )
+		formatString: 0.0%
+		displayFolder: Core metrics
+		lineageTag: 556c5b5a-f315-4acc-aed0-19deb3ee9264
+
+	measure 'Senior %' = DIVIDE ( [Senior Population], [Age Sample Population] )
+		formatString: 0.0%
+		displayFolder: Core metrics
+		lineageTag: be564373-3d33-4c87-b400-c7b07c98f194
+
+	measure 'Weighted GNR' = DIVIDE ( SUMX ( FactCommunityProfile, 'FactCommunityProfile'[LG_FRM_GNR] * 'FactCommunityProfile'[CHSPOP_CEN] ), [Total Population] )
+		formatString: 0.00\%
+		displayFolder: Core metrics
+		lineageTag: 508401c9-b4c8-4a20-b9ca-047aabb03b3f
+
+	measure 'Vulnerability Proxy Score' = AVERAGE ( 'FactCommunityProfile'[CommunityVulnerabilityProxyScore] )
+		displayFolder: Transparent scores
+		lineageTag: ac5a5fa0-68fe-4330-98b6-f6959ea10c9b
+
+	measure 'Data Blindspot Score' = AVERAGE ( 'FactCommunityProfile'[DataBlindspotScore] )
+		displayFolder: Transparent scores
+		lineageTag: 66ffaea1-c4a8-4056-8ad9-6269f3bfa332
+
+	measure 'Healthcare Supply Score' = AVERAGE ( 'FactFacilitySupply'[HealthcareSupplyScore] )
+		displayFolder: Transparent scores
+		lineageTag: cd60f2da-ee89-4653-8c62-799e4e59f51f
+
+	measure 'Healthcare Supply Gap Score' = AVERAGE ( 'FactFacilitySupply'[HealthcareSupplyGapScore] )
+		formatString: 0.00
+		displayFolder: Transparent scores
+		lineageTag: 9497cf0c-005d-4779-865b-e27f7c6bfa0d
+
+	measure 'Resource Priority Score' = AVERAGE ( 'FactAllocationScenario'[ResourcePriorityScore] )
+		displayFolder: Transparent scores
+		lineageTag: a3824f57-f9c7-431f-a860-5af99bc3c600
+
+	measure 'Priority Rank' = MIN ( 'FactAllocationScenario'[PriorityRank] )
+		displayFolder: Transparent scores
+		lineageTag: 50369d4d-6922-40f4-8f22-dbd5655017cb
+
+	measure 'Scenario Budget Allocation' = SUM ( 'FactAllocationScenario'[ScenarioBudgetAllocation] )
+		formatString: $#,0.00;($#,0.00);$#,0.00
+		displayFolder: Scenario model - not actual VCH resources
+		lineageTag: 2cc4dd75-6eb0-4827-9c89-28c1ad032fc7
+
+	measure 'Scenario Clinical FTE Allocation' = SUM ( 'FactAllocationScenario'[ScenarioClinicalFTEAllocation] )
+		displayFolder: Scenario model - not actual VCH resources
+		lineageTag: 90c2f10e-12b9-4529-9899-cd6d8280b12e
+
+	measure 'Scenario Community Care Allocation' = SUM ( 'FactAllocationScenario'[ScenarioCommunityCareAllocation] )
+		displayFolder: Scenario model - not actual VCH resources
+		lineageTag: acebff77-2172-480a-81b1-23ad1b5b9e75
+
+	measure 'Budget Reconciliation' = [Scenario Budget Allocation] - 10000000
+		isHidden
+		displayFolder: Scenario model - not actual VCH resources
+		lineageTag: 96dadfbb-c0b2-428e-a011-b43c3bb4c2d1
+
+	measure 'Clinical FTE Reconciliation' = [Scenario Clinical FTE Allocation] - 50
+		isHidden
+		displayFolder: Scenario model - not actual VCH resources
+		lineageTag: def95d95-722c-4b3c-8779-ceda6806bede
+
+	measure 'Community Care Reconciliation' = [Scenario Community Care Allocation] - 1000
+		isHidden
+		displayFolder: Scenario model - not actual VCH resources
+		lineageTag: 8a8dcd13-db69-4568-b9cc-8aa4dd197b1e
+
+	measure 'High Priority Communities' = COUNTROWS ( FILTER ( VALUES ( DimCHSA[CHSA Code] ), [Priority Rank] <= 5 ) )
+		displayFolder: Scenario model - not actual VCH resources
+		lineageTag: e21d2b63-b127-4e98-8828-19e7f9be0697
+
+	measure 'Vulnerability Priority Contribution' = 0.45 * [Vulnerability Proxy Score]
+		formatString: 0.00
+		displayFolder: Transparent scoresPriority components
+		lineageTag: 49e6dd52-4d9c-4504-a3a5-c49fd79db578
+
+	measure 'Blindspot Priority Contribution' = 0.25 * [Data Blindspot Score]
+		formatString: 0.00
+		displayFolder: Transparent scoresPriority components
+		lineageTag: ab187e0f-b616-467f-bc1b-b409230e303c
+
+	measure 'Supply Gap Priority Contribution' = 0.30 * [Healthcare Supply Gap Score]
+		formatString: 0.00
+		displayFolder: Transparent scoresPriority components
+		lineageTag: b207590e-ddde-4cca-a612-d4b1f2e021e3
+
+	measure 'Population-only Budget Allocation' = SUM ( 'FactAllocationScenario'[PopulationOnlyBudgetAllocation] )
+		formatString: $#,0.00;($#,0.00);$#,0.00
+		displayFolder: Scenario model - not actual VCH resourcesPopulation-only comparison
+		lineageTag: bdf702e1-d4dc-4722-b68d-c3b867a85368
+
+	measure 'Population-only Clinical FTE Allocation' = SUM ( 'FactAllocationScenario'[PopulationOnlyClinicalFTEAllocation] )
+		formatString: 0.0
+		displayFolder: Scenario model - not actual VCH resourcesPopulation-only comparison
+		lineageTag: b18ce548-e7b1-4b92-a801-a6a5b4bd8be0
+
+	measure 'Population-only Community Care Allocation' = SUM ( 'FactAllocationScenario'[PopulationOnlyCommunityCareAllocation] )
+		formatString: 0
+		displayFolder: Scenario model - not actual VCH resourcesPopulation-only comparison
+		lineageTag: 9eedc1fe-d6c3-4a20-8df1-30671baa051a
+
+	measure 'Budget Difference' = SUM ( 'FactAllocationScenario'[BudgetDifference] )
+		formatString: $#,0.00;($#,0.00);$#,0.00
+		displayFolder: Scenario model - not actual VCH resourcesPopulation-only comparison
+		lineageTag: c55825a4-c554-4b75-97c2-b1188bb1ace5
+
+	measure 'Clinical FTE Difference' = SUM ( 'FactAllocationScenario'[ClinicalFTEDifference] )
+		formatString: 0.0
+		displayFolder: Scenario model - not actual VCH resourcesPopulation-only comparison
+		lineageTag: 0c49b3ac-4dbc-47b3-aa55-ad75c46aa47e
+
+	measure 'Community Care Difference' = SUM ( 'FactAllocationScenario'[CommunityCareDifference] )
+		formatString: 0
+		displayFolder: Scenario model - not actual VCH resourcesPopulation-only comparison
+		lineageTag: 1ec92de3-267d-4e38-8c55-e19356c8a767
+
+	measure 'Minimum Scenario Rank' = MIN ( FactPrioritySensitivity[Priority Rank] )
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: 5db7a957-3499-497e-87d2-49b63538a819
+
+	measure 'Maximum Scenario Rank' = MAX ( FactPrioritySensitivity[Priority Rank] )
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: 44878e78-7696-4276-a062-0fc239063aca
+
+	measure 'Scenario Rank Range' = [Maximum Scenario Rank] - [Minimum Scenario Rank]
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: d563ed0e-2ad3-466a-8f5f-ffed025d9840
+
+	measure 'Top-5 Scenario Count' = CALCULATE ( DISTINCTCOUNT ( FactPrioritySensitivity[Scenario] ), FactPrioritySensitivity[Priority Rank] <= 5 )
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: b797b476-bd7f-408f-8e4c-1eeb072d5b7c
+
+	measure 'Balanced Rank' = CALCULATE ( MIN ( FactPrioritySensitivity[Priority Rank] ), FactPrioritySensitivity[Scenario] = "Balanced" )
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: 6c796ba4-c632-45d8-b146-810e9c0dbc1c
+
+	measure 'Need-focused Rank' = CALCULATE ( MIN ( FactPrioritySensitivity[Priority Rank] ), FactPrioritySensitivity[Scenario] = "Need-focused" )
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: 903367da-57cd-4dfa-9d37-ddfe04057e59
+
+	measure 'Uncertainty-aware Rank' = CALCULATE ( MIN ( FactPrioritySensitivity[Priority Rank] ), FactPrioritySensitivity[Scenario] = "Uncertainty-aware" )
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: f09a5d12-1005-48ac-971e-66465b71e2fc
+
+	measure 'Supply-gap-focused Rank' = CALCULATE ( MIN ( FactPrioritySensitivity[Priority Rank] ), FactPrioritySensitivity[Scenario] = "Supply-gap-focused" )
+		formatString: 0
+		displayFolder: Sensitivity analysis
+		lineageTag: 4dca950d-6c0a-4930-a1a3-1b3a2fe635b3
+
+	measure 'Passed Controls' = CALCULATE ( COUNTROWS ( ValidationResults ), ValidationResults[Status] = "PASS" )
+		formatString: 0
+		displayFolder: Data quality
+		lineageTag: 35b973a4-64b4-46ee-a8ff-81cc2d4d907c
+
+	measure 'Failed Controls' = COALESCE ( CALCULATE ( COUNTROWS ( ValidationResults ), ValidationResults[Status] = "FAIL" ), 0 )
+		formatString: 0
+		displayFolder: Data quality
+		lineageTag: d2768a0f-eed0-4308-b93e-4372dfc4db77
+
+	measure 'Null Retained Spatial Assignments' = COUNTROWS ( FILTER ( DimFacility, ISBLANK ( DimFacility[CMNTY_HLTH_SERV_AREA_CODE] ) ) )
+		formatString: 0
+		displayFolder: Data quality
+		lineageTag: bb5c306d-ad99-4771-b8f8-cf5f6aec6a85
+
+	measure 'Edge-tolerance Assignments' = CALCULATE ( COUNTROWS ( DimFacility ), DimFacility[SpatialAssignmentStatus] = "Assigned to nearest polygon edge within 25 m tolerance" )
+		formatString: 0
+		displayFolder: Data quality
+		lineageTag: 18adb792-5ddf-4121-823b-baf92972efc3
+
+	column Placeholder
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e28e88e-b91f-4024-a1eb-22b441355b98
+		summarizeBy: sum
+		sourceColumn: Placeholder
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlCKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Placeholder = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Placeholder", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

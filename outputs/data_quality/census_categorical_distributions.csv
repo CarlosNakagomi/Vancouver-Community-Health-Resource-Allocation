@@ -1,0 +1,117 @@
+column,value,count
+CHSRBRL_CL,1 Metropolitan,60
+CHSRBRL_CL,6 Rural,51
+CHSRBRL_CL,2 Large Urban,30
+CHSRBRL_CL,5 Rural Hub,25
+CHSRBRL_CL,4 Small Urban,22
+CHSRBRL_CL,7 Remote,16
+CHSRBRL_CL,3 Medium Urban,13
+HLT_A_NAME,Greater Victoria,9
+HLT_A_NAME,Surrey,8
+HLT_A_NAME,Langley,7
+HLT_A_NAME,Greater Nanaimo,7
+HLT_A_NAME,Prince George,7
+HLT_A_NAME,Richmond,7
+HLT_A_NAME,Central Okanagan,7
+HLT_A_NAME,North Vancouver,5
+HLT_A_NAME,Western Communities,5
+HLT_A_NAME,Tri-Cities,5
+HLT_A_NAME,Saanich Peninsula,4
+HLT_A_NAME,Cowichan Valley North,4
+HLT_A_NAME,Nechako,4
+HLT_A_NAME,Vancouver - Westside,4
+HLT_A_NAME,Vancouver - South,4
+HLT_A_NAME,Abbotsford,4
+HLT_A_NAME,Burnaby,4
+HLT_A_NAME,Peace River South,4
+HLT_A_NAME,Delta,3
+HLT_A_NAME,West Vancouver/Bowen Island,3
+HLT_A_NAME,Sunshine Coast,3
+HLT_A_NAME,Howe Sound,3
+HLT_A_NAME,Oceanside,3
+HLT_A_NAME,Alberni/Clayoquot,3
+HLT_A_NAME,Comox Valley,3
+HLT_A_NAME,Vancouver Island North,3
+HLT_A_NAME,Smithers,3
+HLT_A_NAME,Burns Lake,3
+HLT_A_NAME,Vancouver - City Centre,3
+HLT_A_NAME,Vancouver - Centre North,3
+HLT_A_NAME,Vancouver - Northeast,3
+HLT_A_NAME,Vancouver - Midtown,3
+HLT_A_NAME,Kamloops,3
+HLT_A_NAME,Maple Ridge/Pitt Meadows,3
+HLT_A_NAME,Peace River North,3
+HLT_A_NAME,Powell River,2
+HLT_A_NAME,Southern Gulf Islands,2
+HLT_A_NAME,Cowichan Valley South,2
+HLT_A_NAME,Greater Campbell River,2
+HLT_A_NAME,Haida Gwaii,2
+HLT_A_NAME,Prince Rupert,2
+HLT_A_NAME,Terrace,2
+HLT_A_NAME,Quesnel,2
+HLT_A_NAME,South Surrey/White Rock,2
+HLT_A_NAME,Vernon,2
+HLT_A_NAME,Cariboo/Chilcotin,2
+HLT_A_NAME,Chilliwack,2
+HLT_A_NAME,Mission,2
+HLT_A_NAME,Fort Nelson,2
+HLT_A_NAME,Bella Coola Valley,1
+HLT_A_NAME,Central Coast,1
+HLT_A_NAME,Cowichan Valley West,1
+HLT_A_NAME,Vancouver Island West,1
+HLT_A_NAME,Snow Country,1
+HLT_A_NAME,Upper Skeena,1
+HLT_A_NAME,Kitimat,1
+HLT_A_NAME,Stikine,1
+HLT_A_NAME,Nisga'a,1
+HLT_A_NAME,Telegraph Creek,1
+HLT_A_NAME,Fernie,1
+HLT_A_NAME,Cranbrook,1
+HLT_A_NAME,Kimberley,1
+HLT_A_NAME,Windermere,1
+HLT_A_NAME,Creston,1
+HLT_A_NAME,Golden,1
+HLT_A_NAME,Kootenay Lake,1
+HLT_A_NAME,Nelson,1
+HLT_A_NAME,Castlegar,1
+HLT_A_NAME,Arrow Lakes,1
+HLT_A_NAME,Trail,1
+HLT_A_NAME,Grand Forks,1
+HLT_A_NAME,Kettle Valley,1
+HLT_A_NAME,Southern Okanagan,1
+HLT_A_NAME,Penticton,1
+HLT_A_NAME,Keremeos,1
+HLT_A_NAME,Princeton,1
+HLT_A_NAME,Armstrong/Spallumcheen,1
+HLT_A_NAME,Summerland,1
+HLT_A_NAME,Enderby,1
+HLT_A_NAME,Revelstoke,1
+HLT_A_NAME,Salmon Arm,1
+HLT_A_NAME,100 Mile House,1
+HLT_A_NAME,North Thompson,1
+HLT_A_NAME,Lillooet,1
+HLT_A_NAME,South Cariboo,1
+HLT_A_NAME,Merritt,1
+HLT_A_NAME,Hope,1
+HLT_A_NAME,Agassiz/Harrison,1
+HSD_A_NAME,Fraser South,20
+HSD_A_NAME,South Vancouver Island,20
+HSD_A_NAME,Central Vancouver Island,20
+HSD_A_NAME,Vancouver,20
+HSD_A_NAME,North Shore/Coast Garibaldi,18
+HSD_A_NAME,Northern Interior,16
+HSD_A_NAME,Okanagan,16
+HSD_A_NAME,Northwest,15
+HSD_A_NAME,Thompson Cariboo Shuswap,12
+HSD_A_NAME,Fraser North,12
+HSD_A_NAME,Fraser East,10
+HSD_A_NAME,North Vancouver Island,9
+HSD_A_NAME,Northeast,9
+HSD_A_NAME,Richmond,7
+HSD_A_NAME,Kootenay Boundary,7
+HSD_A_NAME,East Kootenay,6
+HAUTH_NAME,Vancouver Island,49
+HAUTH_NAME,Vancouver Coastal,45
+HAUTH_NAME,Fraser,42
+HAUTH_NAME,Interior,41
+HAUTH_NAME,Northern,40

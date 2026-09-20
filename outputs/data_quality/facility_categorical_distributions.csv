@@ -1,0 +1,1609 @@
+column,value,count
+odhf_facility_type,Nursing and residential care facilities,4444
+odhf_facility_type,Ambulatory health care services,2727
+odhf_facility_type,Hospitals,1853
+odhf_facility_type,<NULL>,13
+odhf_facility_type,nursing and residential care facilities,2
+province,on,3733
+province,qc,2359
+province,bc,1492
+province,sk,473
+province,ab,331
+province,mb,214
+province,ns,195
+province,nl,96
+province,nb,62
+province,yt,39
+province,pe,35
+province,nt,7
+province,nu,3
+city,toronto,536
+city,montréal,258
+city,ottawa,224
+city,vancouver,196
+city,hamilton,147
+city,victoria,128
+city,québec,120
+city,<NULL>,105
+city,surrey,102
+city,london,95
+city,laval,88
+city,mississauga,83
+city,gatineau,79
+city,windsor,76
+city,calgary,66
+city,trois-rivières,66
+city,burnaby,64
+city,edmonton,62
+city,thunder bay,60
+city,abbotsford,58
+city,winnipeg,58
+city,brampton,57
+city,kitchener,56
+city,sherbrooke,53
+city,sudbury,53
+city,north vancouver,52
+city,regina,52
+city,richmond,50
+city,oakville,46
+city,kingston,46
+city,st catharines,46
+city,barrie,46
+city,kelowna,43
+city,saguenay,42
+city,nanaimo,40
+city,saskatoon,40
+city,kamloops,39
+city,peterborough,39
+city,burlington,39
+city,langley,37
+city,longueuil,37
+city,brantford,36
+city,chatham-kent,36
+city,coquitlam,34
+city,vernon,32
+city,guelph,32
+city,niagara falls,32
+city,sarnia,31
+city,belleville,30
+city,owen sound,30
+city,orillia,30
+city,cambridge,29
+city,sault ste marie,29
+city,lévis,29
+city,timmins,28
+city,waterloo,28
+city,terrebonne,28
+city,newmarket,27
+city,cornwall,27
+city,oshawa,27
+city,stratford,27
+city,rouyn-noranda,27
+city,delta,26
+city,maple ridge,26
+city,prince george,26
+city,markham,26
+city,north bay,26
+city,richmond hill,26
+city,saint-jérôme,26
+city,brockville,25
+city,granby,25
+city,campbell river,24
+city,duncan,24
+city,vaughan,24
+city,rimouski,24
+city,welland,23
+city,scarborough,23
+city,saint-hyacinthe,23
+city,chilliwack,21
+city,whitby,21
+city,gaspé,20
+city,whitehorse,20
+city,halifax,19
+city,kenora,19
+city,new westminster,18
+city,kawartha lakes,18
+city,thetford mines,18
+city,victoriaville,18
+city,penetanguishene,17
+city,pembroke,17
+city,joliette,17
+city,salmon arm,16
+city,penticton,16
+city,saint thomas,16
+city,collingwood,16
+city,leamington,16
+city,shawinigan,16
+city,baie-comeau,16
+city,la sarre,16
+city,north battleford,16
+city,powell river,15
+city,orangeville,15
+city,woodstock,15
+city,etobicoke,15
+city,grimsby,15
+city,alma,15
+city,drummondville,15
+city,repentigny,15
+city,val-dor,15
+city,sept-îles,15
+city,saint-eustache,15
+city,prince albert,15
+city,williams lake,14
+city,port coquitlam,14
+city,milton,14
+city,fort erie,14
+city,simcoe,14
+city,midland,14
+city,pointe-claire,14
+city,roberval,14
+city,rivière-du-loup,14
+city,courtenay,13
+city,huntsville,13
+city,cobourg,13
+city,mont-joli,13
+city,sainte-anne-des-monts,13
+city,amos,13
+city,maniwaki,13
+city,matane,13
+city,port alberni,12
+city,west vancouver,12
+city,nelson,12
+city,aurora,12
+city,ajax,12
+city,hawkesbury,12
+city,dolbeau-mistassini,12
+city,saint-charles-borromée,12
+city,dawson creek,11
+city,mission,11
+city,st johns,11
+city,sydney,11
+city,dartmouth,11
+city,parry sound,11
+city,fort frances,11
+city,port hope,11
+city,sorel-tracy,11
+city,saint-jean-sur-richelieu,11
+city,mont-laurier,11
+city,medicine hat,10
+city,cochrane,10
+city,white rock,10
+city,goderich,10
+city,bracebridge,10
+city,arnprior,10
+city,renfrew,10
+city,temiskaming shores,10
+city,salaberry-de-valleyfield,10
+city,beloeil,10
+city,amqui,10
+city,cowansville,10
+city,saint-georges,10
+city,la tuque,10
+city,montmagny,10
+city,chandler,10
+city,yorkton,10
+city,moose jaw,10
+city,weyburn,10
+city,castlegar,9
+city,cranbrook,9
+city,sidney,9
+city,creston,9
+city,sechelt,9
+city,shelburne,9
+city,pickering,9
+city,ingersoll,9
+city,blind river,9
+city,clinton,9
+city,edward,9
+city,campbellford,9
+city,listowel,9
+city,north york,9
+city,sioux lookout,9
+city,tillsonburg,9
+city,charlottetown,9
+city,sainte-agathe-des-monts,9
+city,la pêche,9
+city,la malbaie,9
+city,ville-marie,9
+city,louiseville,9
+city,selkirk,8
+city,petrolia,8
+city,thessalon,8
+city,hagersville,8
+city,bancroft,8
+city,halton hills,8
+city,mount forest,8
+city,bowmanville,8
+city,smiths falls,8
+city,walkerton,8
+city,perth,8
+city,haliburton,8
+city,essex,8
+city,quinte west,8
+city,dryden,8
+city,port perry,8
+city,little current,8
+city,asbestos,8
+city,lac-mégantic,8
+city,témiscouata-sur-le-lac,8
+city,camrose,7
+city,lloydminster,7
+city,parksville,7
+city,west kelowna,7
+city,saint john,7
+city,moncton,7
+city,amherst,7
+city,new tecumseth,7
+city,niagara-on-the-lake,7
+city,kemptville,7
+city,thorold,7
+city,brant,7
+city,chapleau,7
+city,fergus,7
+city,carleton place,7
+city,hanover,7
+city,dunnville,7
+city,chesley,7
+city,elliot lake,7
+city,port colborne,7
+city,red lake,7
+city,magog,7
+city,plessisville,7
+city,beauceville,7
+city,châteauguay,7
+city,mansfield-et-pontefract,7
+city,lachute,7
+city,trois-pistoles,7
+city,la pocatière,7
+city,melville,7
+city,kipling,7
+city,watrous,7
+city,bonnyville,6
+city,lethbridge,6
+city,fort st john,6
+city,grand forks,6
+city,saanichton,6
+city,squamish,6
+city,north saanich,6
+city,trail,6
+city,summerland,6
+city,oliver,6
+city,north sydney,6
+city,madoc,6
+city,amherstburg,6
+city,aylmer,6
+city,elmira,6
+city,uxbridge,6
+city,clarence-rockland,6
+city,st thomas,6
+city,alexandria,6
+city,wiarton,6
+city,southampton,6
+city,saint marys,6
+city,kapuskasing,6
+city,kirkland lake,6
+city,gravenhurst,6
+city,napanee,6
+city,kincardine,6
+city,terrace bay,6
+city,picton,6
+city,moose factory,6
+city,vaudreuil-dorion,6
+city,verdun,6
+city,mascouche,6
+city,blanc-sablon,6
+city,havre-saint-pierre,6
+city,port-cartier,6
+city,maria,6
+city,coaticook,6
+city,nicolet,6
+city,rawdon,6
+city,baie-saint-paul,6
+city,fort quappelle,6
+city,estevan,6
+city,meadow lake,6
+city,red deer,5
+city,grande prairie,5
+city,100 mile house,5
+city,brentwood bay,5
+city,invermere,5
+city,revelstoke,5
+city,quesnel,5
+city,terrace,5
+city,campbellton,5
+city,new glasgow,5
+city,glace bay,5
+city,truro,5
+city,trenton,5
+city,bedford,5
+city,lincoln,5
+city,mattawa,5
+city,mississippi mills,5
+city,iroquois falls,5
+city,chatham,5
+city,paris,5
+city,west nipissing,5
+city,kingsville,5
+city,caledon,5
+city,whitchurch-stouffville,5
+city,wingham,5
+city,amherstview,5
+city,powassan,5
+city,wawa,5
+city,wallaceburg,5
+city,lambton shores,5
+city,muncey,5
+city,durham,5
+city,nipigon,5
+city,lions head,5
+city,ohsweken,5
+city,mindemoya,5
+city,marathon,5
+city,strathroy,5
+city,mitchell,5
+city,summerside,5
+city,boucherville,5
+city,kirkland,5
+city,saint-sauveur,5
+city,bromont,5
+city,bécancour,5
+city,brossard,5
+city,saint-andré-avellin,5
+city,saint-pascal,5
+city,témiscaming,5
+city,rivière-rouge,5
+city,québec city,5
+city,malartic,5
+city,shawville,5
+city,beaupré,5
+city,côte-saint-luc,5
+city,blainville,5
+city,langenburg,5
+city,wolseley,5
+city,st albert,4
+city,vegreville,4
+city,smoky lake,4
+city,jasper,4
+city,agassiz,4
+city,smithers,4
+city,ladysmith,4
+city,westbank,4
+city,chetwynd,4
+city,lake country,4
+city,pitt meadows,4
+city,qualicum beach,4
+city,langley city,4
+city,merritt,4
+city,comox,4
+city,armstrong,4
+city,souris,4
+city,sackville,4
+city,bonavista,4
+city,new waterford,4
+city,kentville,4
+city,brighton,4
+city,exeter,4
+city,barrys bay,4
+city,matheson,4
+city,stayner,4
+city,arthur,4
+city,georgina,4
+city,lancaster,4
+city,lakeshore,4
+city,englehart,4
+city,richards landing,4
+city,markdale,4
+city,fort william first nation,4
+city,espanola,4
+city,hearst,4
+city,meaford,4
+city,minden,4
+city,moosonee,4
+city,cutler,4
+city,lucknow,4
+city,palmerston,4
+city,southwold,4
+city,alberton,4
+city,oleary,4
+city,saint-félicien,4
+city,ormstown,4
+city,westmount,4
+city,saint-alphonse-rodriguez,4
+city,pointe-à-la-croix,4
+city,lanse-saint-jean,4
+city,sainte-thérèse,4
+city,mont-royal,4
+city,gracefield,4
+city,huntingdon,4
+city,les escoumins,4
+city,chicoutimi,4
+city,donnacona,4
+city,saint-tite,4
+city,mirabel,4
+city,forestville,4
+city,sainte-marie,4
+city,paspébiac,4
+city,pohénégamook,4
+city,boisbriand,4
+city,carleton-sur-mer,4
+city,percé,4
+city,vallée-jonction,4
+city,assiniboia,4
+city,carnduff,4
+city,broadview,4
+city,carlyle,4
+city,wynyard,4
+city,indian head,4
+city,humboldt,4
+city,kelvington,4
+city,tisdale,4
+city,wadena,4
+city,spiritwood,4
+city,dawson city,4
+city,barrhead,3
+city,sherwood park,3
+city,ponoka,3
+city,claresholm,3
+city,killam,3
+city,leduc,3
+city,st paul,3
+city,fort saskatchewan,3
+city,stony plain,3
+city,fort nelson,3
+city,ashcroft,3
+city,keremeos,3
+city,sooke,3
+city,coldstream,3
+city,cobble hill,3
+city,gibsons,3
+city,whistler,3
+city,osoyoos,3
+city,port moody,3
+city,clearwater,3
+city,fernie,3
+city,salt spring island,3
+city,hope,3
+city,aldergrove,3
+city,golden,3
+city,kitimat,3
+city,lillooet,3
+city,princeton,3
+city,vanderhoof,3
+city,ashern,3
+city,stonewall,3
+city,eriksdale,3
+city,gimli,3
+city,teulon,3
+city,minnedosa,3
+city,neepawa,3
+city,killarney,3
+city,bathurst,3
+city,fredericton,3
+city,edmundston,3
+city,caraquet,3
+city,sainte-anne-de-kent,3
+city,gander,3
+city,brookfield,3
+city,labrador city,3
+city,grand falls-windsor,3
+city,clarenville,3
+city,st anthony,3
+city,springdale,3
+city,lewisporte,3
+city,meteghan,3
+city,neils harbour,3
+city,sydney mines,3
+city,wolfville,3
+city,sheet harbour,3
+city,berwick,3
+city,antigonish,3
+city,bridgewater,3
+city,pictou,3
+city,casselman,3
+city,tweed,3
+city,watford,3
+city,atikokan,3
+city,beaverton,3
+city,lindsay,3
+city,tavistock,3
+city,niagara on the lake,3
+city,woodbridge,3
+city,ailsa craig,3
+city,deep river,3
+city,delhi,3
+city,saint jacobs,3
+city,erin,3
+city,emo,3
+city,tecumseh,3
+city,newbury,3
+city,embrun,3
+city,georgetown,3
+city,geraldton,3
+city,merrickville,3
+city,seaforth,3
+city,fort albany,3
+city,northbrook,3
+city,manitouwadge,3
+city,stirling,3
+city,norwood,3
+city,new hamburg,3
+city,long sault,3
+city,plantagenet,3
+city,prescott,3
+city,rainy river,3
+city,stoney creek,3
+city,wasaga beach,3
+city,montague,3
+city,ferme-neuve,3
+city,port-daniel gascons,3
+city,prévost,3
+city,east angus,3
+city,saint-prosper,3
+city,métabetchouan lac-à-la-croix,3
+city,berthierville,3
+city,saint-gabriel,3
+city,laurier-station,3
+city,sainte-claire,3
+city,saint-bruno-de-montarville,3
+city,l'assomption,3
+city,candiac,3
+city,bonaventure,3
+city,la baie,3
+city,lachine,3
+city,fermont,3
+city,notre-dame-du-lac,3
+city,puvirnituq,3
+city,sainte-geneviève-de-batiscan,3
+city,disraeli,3
+city,senneterre,3
+city,chibougamau,3
+city,cap-saint-ignace,3
+city,grande-vallée,3
+city,murdochville,3
+city,greenfield park,3
+city,saint-raymond,3
+city,piedmont,3
+city,cap-chat,3
+city,caplan,3
+city,chertsey,3
+city,lac-des-aigles,3
+city,saint-donat,3
+city,val-des-monts,3
+city,normandin,3
+city,matapédia,3
+city,chisasibi,3
+city,tring-jonction,3
+city,sainte-agathe-de-lotbinière,3
+city,saint-patrice-de-beaurivage,3
+city,saint-stanislas,3
+city,biggar,3
+city,cabri,3
+city,esterhazy,3
+city,swift current,3
+city,cumberland house,3
+city,ponteix,3
+city,radville,3
+city,gravelbourg,3
+city,leoville,3
+city,kinistino,3
+city,kamsack,3
+city,kerrobert,3
+city,wakaw,3
+city,strasbourg,3
+city,melfort,3
+city,rosthern,3
+city,nipawin,3
+city,norquay,3
+city,shellbrook,3
+city,porcupine plain,3
+city,preeceville,3
+city,raymore,3
+city,rosetown,3
+city,watson lake,3
+city,strathmore,2
+city,airdrie,2
+city,athabasca,2
+city,sylvan lake,2
+city,oyen,2
+city,canmore,2
+city,consort,2
+city,coronation,2
+city,banff,2
+city,castor,2
+city,drayton valley,2
+city,drumheller,2
+city,fort macleod,2
+city,mayerthorpe,2
+city,viking,2
+city,vulcan,2
+city,fort mcmurray,2
+city,grimshaw,2
+city,high river,2
+city,hinton,2
+city,la crete,2
+city,lac la biche,2
+city,mclennan,2
+city,peace river,2
+city,rocky mountain house,2
+city,slave lake,2
+city,prince rupert,2
+city,nakusp,2
+city,bella coola,2
+city,thornhill,2
+city,alert bay,2
+city,burns lake,2
+city,queen charlotte,2
+city,masset,2
+city,lumby,2
+city,valemount,2
+city,enderby,2
+city,port mcneill,2
+city,hazelton,2
+city,altona,2
+city,arborg,2
+city,beausejour,2
+city,benito,2
+city,steinbach,2
+city,boissevain,2
+city,winkler,2
+city,brandon,2
+city,carberry,2
+city,emerson,2
+city,erickson,2
+city,glenboro,2
+city,norway house,2
+city,notre-dame-de-lourdes,2
+city,pine falls,2
+city,rossburn,2
+city,russell,2
+city,swan river,2
+city,the pas,2
+city,treherne,2
+city,virden,2
+city,st stephen,2
+city,grand falls,2
+city,grand manan,2
+city,perth-andover,2
+city,tracadie-sheila,2
+city,lamèque,2
+city,saint-quentin,2
+city,miramichi,2
+city,oromocto,2
+city,sussex,2
+city,waterville,2
+city,baie verte,2
+city,st albans,2
+city,burgeo,2
+city,carbonear,2
+city,harbour breton,2
+city,corner brook,2
+city,old perlican,2
+city,botwood,2
+city,bell island,2
+city,fogo,2
+city,happy valley-goose bay,2
+city,placentia,2
+city,port saunders,2
+city,baddeck,2
+city,springhill,2
+city,annapolis royal,2
+city,advocate harbour,2
+city,canso,2
+city,pugwash,2
+city,lunenburg,2
+city,cheticamp,2
+city,guysborough,2
+city,middleton,2
+city,inverness,2
+city,bible hill,2
+city,tatamagouche,2
+city,middle musquodoboit,2
+city,caledonia,2
+city,liverpool,2
+city,enfield,2
+city,arichat,2
+city,musquodoboit harbour,2
+city,yarmouth,2
+city,hay river,2
+city,yellowknife,2
+city,midhurst,2
+city,golden lake,2
+city,almonte,2
+city,millbrook,2
+city,delaware,2
+city,fordwich,2
+city,sutton,2
+city,alfred,2
+city,wardsville,2
+city,garden river,2
+city,norwich,2
+city,zurich,2
+city,dutton,2
+city,petawawa,2
+city,bradford west gwillimbury,2
+city,orléans,2
+city,capreol,2
+city,cobden,2
+city,minto,2
+city,courtland,2
+city,marmora,2
+city,gananoque,2
+city,cannington,2
+city,morrisburg,2
+city,parkhill,2
+city,ancaster,2
+city,acton,2
+city,dundas,2
+city,schreiber,2
+city,chatsworth,2
+city,brunner,2
+city,komoka,2
+city,brussels,2
+city,creemore,2
+city,lucan,2
+city,port dover,2
+city,williamsburg,2
+city,winchester,2
+city,the blue mountains,2
+city,limoges,2
+city,greater napanee,2
+city,townsend,2
+city,vankleek hill,2
+city,courtice,2
+city,dresden,2
+city,elora,2
+city,maryhill,2
+city,weston,2
+city,north huntsville,2
+city,smooth rock falls,2
+city,innisfil,2
+city,attawapiskat,2
+city,gore bay,2
+city,king city,2
+city,milverton,2
+city,plympton-wyoming,2
+city,pelham,2
+city,lakefield,2
+city,deseronto,2
+city,maxville,2
+city,puslinch,2
+city,vermilion bay,2
+city,pawitik,2
+city,corbeil,2
+city,sharbot lake,2
+city,kanata,2
+city,bobcaygeon,2
+city,lakeside,2
+city,maple,2
+city,blenheim,2
+city,elmvale,2
+city,warkworth,2
+city,upsala,2
+city,wikwemikong,2
+city,tyne valley,2
+city,saint-lambert,2
+city,farnham,2
+city,otterburn park,2
+city,saint-césaire,2
+city,sainte-anne-de-bellevue,2
+city,saint-ludger,2
+city,saint-malachie,2
+city,potton,2
+city,berthier-sur-mer,2
+city,saint-jérome,2
+city,sainte-anne-des-plaines,2
+city,saint-siméon,2
+city,saint-jean-de-matha,2
+city,sainte-julienne,2
+city,deux-montagnes,2
+city,saint-thomas,2
+city,stanstead,2
+city,matagami,2
+city,lebel-sur-quévillon,2
+city,mont-tremblant,2
+city,kuujjuaq,2
+city,rosemère,2
+city,kahnawake,2
+city,saint-cyprien,2
+city,fortierville,2
+city,sainte-adèle,2
+city,shawinigan-sud,2
+city,jonquière,2
+city,charny,2
+city,saint-marc-des-carrières,2
+city,saint-nazaire,2
+city,saint-boniface,2
+city,saint-paulin,2
+city,franquelin,2
+city,godbout,2
+city,lépiphanie,2
+city,stoneham-et-tewkesbury,2
+city,sacré-coeur,2
+city,pont-rouge,2
+city,lyster,2
+city,saint-agapit,2
+city,otter lake,2
+city,baie-des-sables,2
+city,cantley,2
+city,causapscal,2
+city,lîsle-aux-allumettes,2
+city,dégelis,2
+city,lisle-verte,2
+city,lac-brome,2
+city,lavaltrie,2
+city,les méchins,2
+city,saint-maxime-du-mont-louis,2
+city,pontiac,2
+city,saint-fabien,2
+city,rivière-bleue,2
+city,saint-augustin,2
+city,saint-clément,2
+city,saint-guillaume,2
+city,saint-gédéon-de-beauce,2
+city,saint-jean-de-dieu,2
+city,saint-joseph-de-beauce,2
+city,saint-pamphile,2
+city,sayabec,2
+city,varennes,2
+city,saint-jean-port-joli,2
+city,lac-etchemin,2
+city,kawawachikamach,2
+city,saint-hubert-de-rivière-du-loup,2
+city,roxton falls,2
+city,hébertville,2
+city,saint-charles-de-bellechasse,2
+city,saint-jacques,2
+city,saint-anselme,2
+city,saint-françois-de-la-rivière-du-sud,2
+city,saint-henri,2
+city,girardville,2
+city,saint-ludger-de-milot,2
+city,frampton,2
+city,sainte-croix,2
+city,saint-fulgence,2
+city,sainte-angèle-de-prémont,2
+city,preissac,2
+city,big river,2
+city,birch hills,2
+city,canora,2
+city,lanigan,2
+city,coronach,2
+city,cudworth,2
+city,cupar,2
+city,wawota,2
+city,dinsmore,2
+city,eastend,2
+city,macklin,2
+city,fillmore,2
+city,foam lake,2
+city,gainsborough,2
+city,oxbow,2
+city,duck lake,2
+city,grenfell,2
+city,hafford,2
+city,kindersley,2
+city,kyle,2
+city,goodsoil,2
+city,edam,2
+city,loon lake,2
+city,saltcoats,2
+city,lampman,2
+city,leader,2
+city,imperial,2
+city,lumsden,2
+city,maple creek,2
+city,moosomin,2
+city,stoughton,2
+city,outlook,2
+city,mankota,2
+city,redvers,2
+city,unity,2
+city,leask,2
+city,canwood,2
+city,bashaw,1
+city,bassano,1
+city,beaverlodge,1
+city,bentley,1
+city,bow island,1
+city,boyle,1
+city,breton,1
+city,brooks,1
+city,cardston,1
+city,spirit river,1
+city,coaldale,1
+city,cold lake,1
+city,mundare,1
+city,trochu,1
+city,blairmore,1
+city,daysland,1
+city,devon,1
+city,didsbury,1
+city,edson,1
+city,elk point,1
+city,fairview,1
+city,fox creek,1
+city,galahad,1
+city,grande cache,1
+city,hanna,1
+city,hardisty,1
+city,high prairie,1
+city,hythe,1
+city,innisfail,1
+city,lacombe,1
+city,lamont,1
+city,carmangay,1
+city,magrath,1
+city,manning,1
+city,mannville,1
+city,milk river,1
+city,myrnham,1
+city,high level,1
+city,black diamond,1
+city,okotoks,1
+city,olds,1
+city,pincher creek,1
+city,picture butte,1
+city,provost,1
+city,radway,1
+city,rainbow lake,1
+city,raymond,1
+city,redwater,1
+city,rimbey,1
+city,fort vermilion,1
+city,stettler,1
+city,sundre,1
+city,swan hills,1
+city,taber,1
+city,evansburg,1
+city,three hills,1
+city,tofield,1
+city,two hills,1
+city,valleyview,1
+city,vermilion,1
+city,wabasca,1
+city,wainwright,1
+city,westlock,1
+city,linden,1
+city,wetaskiwin,1
+city,whitecourt,1
+city,willingdon,1
+city,shawnigan lake,1
+city,barriere,1
+city,bella bella,1
+city,chemainus,1
+city,warfield,1
+city,fruitvale,1
+city,houston,1
+city,kimberley,1
+city,knutsford,1
+city,winfield,1
+city,mackenzie,1
+city,mcbride,1
+city,bowen island,1
+city,fort langley,1
+city,port alice,1
+city,port hardy,1
+city,waglisla,1
+city,sandspit,1
+city,sicamous,1
+city,new denver,1
+city,fort st james,1
+city,sun peaks,1
+city,tofino,1
+city,fort steele,1
+city,shawinigan lake,1
+city,w vancouver,1
+city,kaslo,1
+city,baldur,1
+city,birtle,1
+city,brochet,1
+city,carman,1
+city,cartwright,1
+city,st pierre-jolys,1
+city,churchill,1
+city,dauphin,1
+city,deloraine,1
+city,saint pierre-jolys,1
+city,flin flon,1
+city,garden hill,1
+city,gillam,1
+city,grandview,1
+city,hamiota,1
+city,hartney,1
+city,ste-anne,1
+city,oakbank,1
+city,lac brochet,1
+city,lac du bonnet,1
+city,leaf rapids,1
+city,little grand rapids,1
+city,swan lake,1
+city,lundar,1
+city,lynn lake,1
+city,macgregor,1
+city,mccreary,1
+city,melita,1
+city,west st paul,1
+city,e morris,1
+city,pauingassi,1
+city,manitou,1
+city,hodgson,1
+city,pinawa,1
+city,portage la prairie,1
+city,n reston,1
+city,reston,1
+city,rivers,1
+city,roblin,1
+city,crystal city,1
+city,gladstone,1
+city,shamattawa,1
+city,shoal lake,1
+city,snow lake,1
+city,south indian lake,1
+city,st laurent,1
+city,st claude,1
+city,st theresa point,1
+city,sainte anne,1
+city,ste rose du lac,1
+city,thicket portage,1
+city,s thompson,1
+city,vita,1
+city,wasagamack,1
+city,wawanesa,1
+city,whitemouth,1
+city,winnipegosis,1
+city,woodlands,1
+city,york landing,1
+city,grand-sault,1
+city,grand falls/grand-sault,1
+city,plaster rock,1
+city,tracadie,1
+city,buchans,1
+city,stephenville crossing,1
+city,belleoram,1
+city,grand bank,1
+city,norris point,1
+city,badgers quay,1
+city,burin,1
+city,change islands,1
+city,gambo,1
+city,glovertown,1
+city,port aux basques,1
+city,whitbourne,1
+city,eastport,1
+city,gaultois,1
+city,stjohns,1
+city,forteau,1
+city,lascie,1
+city,mount pearl,1
+city,ambrose,1
+city,mount carmel,1
+city,musgrave harbour,1
+city,summerford,1
+city,twillingate,1
+city,rencontre east,1
+city,robert's arm,1
+city,stephenville,1
+city,st brendans,1
+city,st lawrence,1
+city,victoria cove,1
+city,roddickton,1
+city,barrington,1
+city,cole harbour,1
+city,greenwich,1
+city,debert,1
+city,digby,1
+city,dominion,1
+city,dutch brook,1
+city,greenfield,1
+city,beaverbank,1
+city,barss corner,1
+city,mahone bay,1
+city,upper nine mile river,1
+city,bridgetown north,1
+city,argyle,1
+city,fall river,1
+city,eastern passage,1
+city,overton,1
+city,pleasnantville,1
+city,lower west pubnico,1
+city,port hawkesbury,1
+city,st peters,1
+city,new germany,1
+city,sandy point,1
+city,bridgetown,1
+city,seabright,1
+city,chester,1
+city,antgonish,1
+city,parrsboro,1
+city,cleveland,1
+city,lockeport,1
+city,port hood,1
+city,wilmot,1
+city,conway,1
+city,millbrook 27,1
+city,stellarton,1
+city,dayton,1
+city,hammonds plains,1
+city,shubenacadie,1
+city,fort simpson,1
+city,fort smith,1
+city,inuvik,1
+city,cambridge bay,1
+city,rankin inlet,1
+city,iqaluit,1
+city,rockland,1
+city,tamworth,1
+city,noã«lville,1
+city,beamsville,1
+city,londesborough,1
+city,naughton,1
+city,waubaushene,1
+city,cedar point,1
+city,perth road,1
+city,burks falls,1
+city,calabogie,1
+city,bourget,1
+city,harriston,1
+city,cherry valley,1
+city,lefaivre,1
+city,clarence creek,1
+city,noelville,1
+city,lorignal,1
+city,loriginal,1
+city,hampton,1
+city,breslau,1
+city,st. catharines,1
+city,beachburg,1
+city,portland,1
+city,godfrey,1
+city,pakenham,1
+city,south woodslee,1
+city,forest,1
+city,beeton,1
+city,curve lake,1
+city,thamesville,1
+city,dokis,1
+city,dorchester,1
+city,sunderland,1
+city,ear falls,1
+city,eganville,1
+city,harcourt,1
+city,port stanley,1
+city,glenburnie,1
+city,french river,1
+city,chesterville,1
+city,waterford,1
+city,codrington,1
+city,hornepayne,1
+city,st marys,1
+city,shanty bay,1
+city,waterdown,1
+city,val caron,1
+city,haileybury,1
+city,keewaywin,1
+city,saugeen shores,1
+city,saint isidore,1
+city,jarvis,1
+city,fonthill,1
+city,bruce mines,1
+city,lombardy,1
+city,britt,1
+city,opasatika,1
+city,jogues,1
+city,manitowaning,1
+city,blondeau,1
+city,athens,1
+city,ignace,1
+city,west dresden,1
+city,west drayton,1
+city,osnaburgh,1
+city,devlin,1
+city,niagara-on-the,1
+city,garden village,1
+city,mchigeeng,1
+city,keewatin,1
+city,dalles,1
+city,selby,1
+city,stoufville,1
+city,holland centre,1
+city,plat,1
+city,mobert,1
+city,little britain,1
+city,east gwillimbury,1
+city,bolton,1
+city,moonbeam,1
+city,fenelon,1
+city,newcastle,1
+city,rexdale,1
+city,nepean,1
+city,ridgetown,1
+city,muskrat dam,1
+city,ripley,1
+city,sauble beach,1
+city,seeleys bay,1
+city,maberly,1
+city,nobel,1
+city,sheguiandah,1
+city,sheshegwaning,1
+city,stouffville,1
+city,bradford,1
+city,keswick,1
+city,stittsville,1
+city,slate falls,1
+city,smithville,1
+city,whitney,1
+city,woodslee,1
+city,thornbury,1
+city,hensall,1
+city,sydenham,1
+city,sundridge,1
+city,chelmsford,1
+city,alliston,1
+city,temagami,1
+city,new liskeard,1
+city,cargill,1
+city,akwesasne,1
+city,green valley,1
+city,barry’s bay,1
+city,tilbury,1
+city,st-albert,1
+city,curran,1
+city,bala,1
+city,peawanuck,1
+city,west elgin,1
+city,sturgeon falls,1
+city,birch island,1
+city,hunter river,1
+city,wellington,1
+city,north rustico,1
+city,kensington,1
+city,mont-saint-hilaire,1
+city,pincourt,1
+city,upton,1
+city,sainte-madeleine,1
+city,sainte-brigide-diberville,1
+city,dixville,1
+city,saint-flavien,1
+city,notre-dame-des-monts,1
+city,saint-hubert,1
+city,notre-dame-du-bon-conseil,1
+city,saint-bruno,1
+city,saint-urbain,1
+city,rivière-ouelle,1
+city,l'islet,1
+city,delson,1
+city,saint-philippe,1
+city,huberdeau,1
+city,sainte-sophie,1
+city,listuguj,1
+city,essipit,1
+city,re,1
+city,les Îles-de-la-madeleine,1
+city,lambton,1
+city,lac-drolet,1
+city,notre-dame-des-bois,1
+city,saint-augustin-de-woburn,1
+city,stornoway,1
+city,mashteuiatsh,1
+city,manawan,1
+city,charlemagne,1
+city,beaconsfield,1
+city,wakefield,1
+city,shefford,1
+city,chambord,1
+city,lîle-perrot,1
+city,montpellier,1
+city,saint-andré-dargenteuil,1
+city,métabetchouan,1
+city,fleurimont,1
+city,les îles-de-la-madeleine,1
+city,brigham,1
+city,lasalle,1
+city,chambly,1
+city,les bergeronnes,1
+city,sainte-marthe-sur-le-lac,1
+city,courcelles,1
+city,papineauville,1
+city,saint-ambroise-de-kildare,1
+city,grande-rivière,1
+city,saint-adolphe-d'howard,1
+city,saint-gabriel-de-brandon,1
+city,saint-apollinaire,1
+city,saint-augustin-de-desmaures,1
+city,saint-benoît-labre,1
+city,saint-cyrille-de-wendover,1
+city,saint-honoré-de-témiscouata,1
+city,saint-martin,1
+city,beauport,1
+city,valcourt,1
+city,baie-trinité,1
+city,adstock,1
+city,armagh,1
+city,east broughton,1
+city,baie-johan-beetz,1
+city,baie-sainte-catherine,1
+city,beauharnois,1
+city,chelsea,1
+city,saint-côme,1
+city,chevery côte-nord-du-golfe-du-saint-laurent,1
+city,cookshire-eaton,1
+city,coteau-du-lac,1
+city,gallichan,1
+city,henryville,1
+city,côte-nord-du-golfe-du-saint-laurent kegaska,1
+city,lancienne-lorette,1
+city,lascension-de-notre-seigneur,1
+city,grosse-île,1
+city,hill,1
+city,lisle-aux-coudres,1
+city,la guadeloupe,1
+city,sainte-catherine-de-la-jacques-cartier,1
+city,acton vale,1
+city,la patrie,1
+city,la tabatière gros-mécatina,1
+city,labelle,1
+city,les hauteurs,1
+city,longue-pointe-de-mingan,1
+city,low,1
+city,marsoui,1
+city,mutton bay gros-mécatina,1
+city,natashquan,1
+city,notre-dame-des-sept-douleurs,1
+city,notre-dame-du-laus,1
+city,lîle-danticosti,1
+city,portneuf,1
+city,rapides-des-joachims,1
+city,saint-marcellin,1
+city,saint-narcisse-de-rimouski,1
+city,rivière-au-tonnerre,1
+city,rivière-saint-jean,1
+city,rivière-saint-paul rivière-saint-paul,1
+city,rivière-à-pierre,1
+city,saint-antoine-de-lisle-aux-grues,1
+city,saint-esprit,1
+city,saint-lazare-de-bellechasse,1
+city,saint-léonard-daston,1
+city,saint-michel-des-saints,1
+city,saint-ubalde,1
+city,saint-élie-de-caxton,1
+city,saint-épiphane,1
+city,schefferville,1
+city,tadoussac,1
+city,tête-à-la-baleine côte-nord-du-golfe-du-saint-laurent,1
+city,weedon,1
+city,wickham,1
+city,saint-jude,1
+city,contrecoeur,1
+city,saint-amable,1
+city,sainte-julie,1
+city,verchères,1
+city,richelieu,1
+city,grenville,1
+city,saint-alexis-des-monts,1
+city,harrington harbour côte-nord-du-golfe-du-saint-laurent,1
+city,ham-nord,1
+city,saint-chrysostome,1
+city,napierville,1
+city,saint-rémi,1
+city,chute-aux-outardes,1
+city,saint-pierre-de-lîle-dorléans,1
+city,saint-moïse,1
+city,lacolle,1
+city,val-des-bois,1
+city,rigaud,1
+city,saint-polycarpe,1
+city,aguanish,1
+city,eastmain,1
+city,mistissini,1
+city,nemaska,1
+city,oujé-bougoumou,1
+city,waskaganish,1
+city,waswanipi,1
+city,wemindji,1
+city,chénéville,1
+city,saint-barthélemy,1
+city,ayers cliff,1
+city,roxton pond,1
+city,sainte-félicité,1
+city,saint-camille,1
+city,kuujjuarapik,1
+city,saint-claude,1
+city,north hatley,1
+city,new richmond,1
+city,clermont,1
+city,les éboulements,1
+city,saint-côme linière,1
+city,notre-dame-des-prairies,1
+city,saint-roch-des-aulnaies,1
+city,thurso,1
+city,saint-fabien-de-panet,1
+city,saint-michel-du-squatec,1
+city,saint-zacharie,1
+city,saint-roch-de-lachigan,1
+city,cacouna,1
+city,saint-antonin,1
+city,campbells bay,1
+city,fort-coulonge,1
+city,saint-félix-de-valois,1
+city,saint-prime,1
+city,albanel,1
+city,saint-bernard,1
+city,saint-isidore,1
+city,saint-lin laurentides,1
+city,sainte-anne-de-la-pérade,1
+city,sainte-thècle,1
+city,grand-remous,1
+city,saint-damien-de-buckland,1
+city,sainte-justine,1
+city,gesgapegiag,1
+city,saint-célestin,1
+city,montréal-nord,1
+city,chæteauguay,1
+city,cap-aux-meules,1
+city,sainte-foy,1
+city,pierreville,1
+city,saint-étienne-des-grès,1
+city,saint-barnabé,1
+city,dunham,1
+city,ham-sud,1
+city,saint-mathieu-de-beloeil,1
+city,ivry-sur-le-lac,1
+city,beaulac-garthby,1
+city,kanesatake,1
+city,clarendon,1
+city,sainte-luce,1
+city,val-david,1
+city,lanoraie,1
+city,barraute,1
+city,belleterre,1
+city,duparquet,1
+city,dupuy,1
+city,laforce,1
+city,latulipe-et-gaboury,1
+city,macamic,1
+city,moffet,1
+city,nédélec,1
+city,normétal,1
+city,notre-dame-du-nord,1
+city,rémigny,1
+city,poularies,1
+city,palmarolle,1
+city,lotbinière,1
+city,saint-antoine-de-tilly,1
+city,saint-gilles,1
+city,saint-narcisse-de-beaurivage,1
+city,saint-sylvestre,1
+city,saint-édouard-de-lotbinière,1
+city,saint-michel-de-bellechasse,1
+city,saint-raphaël,1
+city,saint-marcel,1
+city,sainte-perpétue,1
+city,saint-odilon-de-cranbourne,1
+city,saint-victor,1
+city,saint-magloire,1
+city,saint-paul-de-montminy,1
+city,saint-robert-bellarmin,1
+city,la prairie,1
+city,labrecque,1
+city,sainte-monique,1
+city,saint-david-de-falardeau,1
+city,saint-honoré,1
+city,sainte-rose-du-nord,1
+city,la doré,1
+city,lac-bouchette,1
+city,notre-dame-de-lorette,1
+city,péribonka,1
+city,saint-edmond-les-plaines,1
+city,saint-eugène-dargentenay,1
+city,saint-thomas-didyme,1
+city,sainte-jeanne-darc,1
+city,passes-dangereuses,1
+city,nominingue,1
+city,vanier,1
+city,notre-dame-de-la-paix,1
+city,roxton,1
+city,montebello,1
+city,wendake,1
+city,lantier,1
+city,mcmasterville,1
+city,arborfield,1
+city,arcola,1
+city,balcarres,1
+city,battleford,1
+city,beauval,1
+city,beechy,1
+city,bengough,1
+city,middle lake,1
+city,blaine lake,1
+city,borden,1
+city,climax,1
+city,buffalo narrows,1
+city,candle lake,1
+city,carrot river,1
+city,central butte,1
+city,st breiux,1
+city,craik,1
+city,creighton,1
+city,cut knife,1
+city,dalmeny,1
+city,davidson,1
+city,delisle,1
+city,eatonia,1
+city,elrose,1
+city,eston,1
+city,rockglen,1
+city,green lake,1
+city,gull lake,1
+city,herbert,1
+city,hodgeville,1
+city,debden,1
+city,hudson bay,1
+city,invermay,1
+city,ituna,1
+city,kincaid,1
+city,la loche,1
+city,la ronge,1
+city,lafleche,1
+city,langham,1
+city,lucky lake,1
+city,maidstone,1
+city,midale,1
+city,neilburg,1
+city,maryfield,1
+city,montmartre,1
+city,mossbank,1
+city,naicam,1
+city,pangman,1
+city,paradise hill,1
+city,pinehouse,1
+city,quill lake,1
+city,watson,1
+city,regina beach,1
+city,turtleford,1
+city,rose valley,1
+city,sandy bay,1
+city,shaunavon,1
+city,smeaton,1
+city,st brieux,1
+city,île-à-la-crosse,1
+city,lestock,1
+city,st walburg,1
+city,theodore,1
+city,vanguard,1
+city,warman,1
+city,weyakwin,1
+city,whitecap,1
+city,whitewood,1
+city,wilkie,1
+city,willow bunch,1
+city,black lake,1
+city,beaver creek,1
+city,carcross,1
+city,carmacks,1
+city,destruction bay,1
+city,faro,1
+city,haines junction,1
+city,mayo,1
+city,old crow,1
+city,pelly crossing,1
+city,ross river,1
+city,teslin,1
+city,whitehose,1
+provider,Province of Ontario,2892
+provider,Province of Québec,1982
+provider,Canadian Institute for Health Information,1487
+provider,Province of British Columbia,1170
+provider,Public Health Agency of Canada,820
+provider,Saskatchewan Health Authorities,323
+provider,Province of Nova Scotia,142
+provider,Province of Manitoba and Manitoba Health Authorities,59
+provider,Yukon Territories,37
+provider,Province of Alberta,32
+provider,Province of Newfoundland and Labrador,31
+provider,Province of Prince Edward Island,29
+provider,Horizon Health Authority - New Brunswick,12
+provider,Vitalité Health Authority - New Brunswick,11
+provider,Municipality of Québec,5
+provider,Northwest Territories,4
+provider,Municipality of Gatineau,2
+provider,Nunavut,1

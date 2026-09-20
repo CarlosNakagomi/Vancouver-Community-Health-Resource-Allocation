@@ -1,0 +1,159 @@
+table FactCommunityProfile
+	lineageTag: b38ac855-8529-4746-80e2-31483028bca5
+
+	column CH_SA_CODE
+		dataType: string
+		lineageTag: b4a6ebc8-fad5-4884-ad19-e8d5c98412cd
+		summarizeBy: none
+		sourceColumn: CH_SA_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CH_SA_NAME
+		dataType: string
+		lineageTag: 9394b6ec-b26c-4fe5-93c9-d2363bd924ff
+		summarizeBy: none
+		sourceColumn: CH_SA_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHSPOP_CEN
+		dataType: int64
+		formatString: 0
+		lineageTag: 76b4aac5-5f79-4ada-aff5-5a338899b5fe
+		summarizeBy: sum
+		sourceColumn: CHSPOP_CEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column GRP_A_TTL
+		dataType: int64
+		formatString: 0
+		lineageTag: d0572f6a-6312-412f-af04-7fe50590e63a
+		summarizeBy: sum
+		sourceColumn: GRP_A_TTL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 0_14_A_TTL
+		dataType: int64
+		formatString: 0
+		lineageTag: 62b4924f-c5f3-4f13-ad1f-757bc3a2eff5
+		summarizeBy: sum
+		sourceColumn: 0_14_A_TTL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 65PLS_A_TL
+		dataType: int64
+		formatString: 0
+		lineageTag: 47bb2c5e-d2b5-4ee4-a624-c4a2406338f4
+		summarizeBy: sum
+		sourceColumn: 65PLS_A_TL
+
+		annotation SummarizationSetBy = Automatic
+
+	column LG_FRM_GNR
+		dataType: double
+		lineageTag: 1353a34a-cf51-441e-834f-1dd7708ccc4c
+		summarizeBy: sum
+		sourceColumn: LG_FRM_GNR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column YouthShare
+		dataType: double
+		lineageTag: a62ee067-4b6d-4003-8a93-27961e86dcc5
+		summarizeBy: sum
+		sourceColumn: YouthShare
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SeniorShare
+		dataType: double
+		lineageTag: 8ee4ed67-ac69-4a2b-8a72-993946703812
+		summarizeBy: sum
+		sourceColumn: SeniorShare
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AgeDependencyShare
+		dataType: string
+		lineageTag: a43c27e9-a8bb-4252-b7c3-e83f8b25e961
+		summarizeBy: none
+		sourceColumn: AgeDependencyShare
+
+		annotation SummarizationSetBy = Automatic
+
+	column YouthPercentile
+		dataType: string
+		lineageTag: 1a11cc42-4f4a-4644-ba77-87b9ccd4b790
+		summarizeBy: none
+		sourceColumn: YouthPercentile
+
+		annotation SummarizationSetBy = Automatic
+
+	column SeniorPercentile
+		dataType: string
+		lineageTag: e4904efe-2628-4055-8027-cdf59a9766cb
+		summarizeBy: none
+		sourceColumn: SeniorPercentile
+
+		annotation SummarizationSetBy = Automatic
+
+	column CommunityVulnerabilityProxyScore
+		dataType: double
+		lineageTag: 1b5c0ad4-0e88-4dd9-9c47-472feb2b2f21
+		summarizeBy: sum
+		sourceColumn: CommunityVulnerabilityProxyScore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DataBlindspotScore
+		dataType: double
+		lineageTag: 743c5f55-a8c4-4939-9ab7-4f571b927ecb
+		summarizeBy: sum
+		sourceColumn: DataBlindspotScore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GNRRiskBand
+		dataType: string
+		lineageTag: 987e4ae5-66a0-4cad-9a52-1edb38a9244f
+		summarizeBy: none
+		sourceColumn: GNRRiskBand
+
+		annotation SummarizationSetBy = Automatic
+
+	column CityOverlapShare
+		dataType: string
+		lineageTag: f440f092-e14a-4f09-b3a0-1b6417a8f5a5
+		summarizeBy: none
+		sourceColumn: CityOverlapShare
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactCommunityProfile = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(pProjectRoot & "\\data\\processed\\fact_community_profile.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers,{{"CH_SA_CODE",type text},{"CHSPOP_CEN",Int64.Type},{"GRP_A_TTL",Int64.Type},{"0_14_A_TTL",Int64.Type},{"65PLS_A_TL",Int64.Type},{"LG_FRM_GNR",type number},{"YouthShare",Percentage.Type},{"SeniorShare",Percentage.Type},{"CommunityVulnerabilityProxyScore",type number},{"DataBlindspotScore",type number}})
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

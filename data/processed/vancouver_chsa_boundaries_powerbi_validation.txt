@@ -1,0 +1,129 @@
+Power BI TopoJSON Geometry Validation
+====================================
+GeometryCollection name: chsa
+Geometry count: 19
+Arc count: 19
+Coordinate order: longitude, latitude
+Exterior winding: clockwise (Power BI/TopoJSON compatible)
+Interior winding: counterclockwise
+Transform: present; integer arcs are delta-encoded
+Round-trip validation: final TopoJSON decoded back to GeoJSON and checked with Shapely
+
+Geometry records
+----------------
+01. id=3211 | CHSA_CODE=3211 | CHSA_NAME=Downtown Vancouver
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.136203, 49.270226, -123.108691, 49.293634) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+02. id=3212 | CHSA_CODE=3212 | CHSA_NAME=West End
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.158846, 49.275756, -123.116381, 49.314084) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+03. id=3263 | CHSA_CODE=3263 | CHSA_NAME=Sunset
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.106867, 49.204039, -123.077030, 49.233184) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+04. id=3264 | CHSA_CODE=3264 | CHSA_NAME=Victoria-Fraserview
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.077533, 49.204662, -123.048800, 49.232936) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+05. id=3213 | CHSA_CODE=3213 | CHSA_NAME=Fairview
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.145995, 49.256919, -123.114748, 49.274921) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+06. id=3221 | CHSA_CODE=3221 | CHSA_NAME=Downtown Eastside
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.112880, 49.269655, -123.077102, 49.289801) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+07. id=3222 | CHSA_CODE=3222 | CHSA_NAME=Northeast False Creek
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.119219, 49.272505, -123.099736, 49.283422) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+08. id=3223 | CHSA_CODE=3223 | CHSA_NAME=Grandview-Woodland
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.078010, 49.262137, -123.051631, 49.293438) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+09. id=3231 | CHSA_CODE=3231 | CHSA_NAME=Cedar Cottage
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.089850, 49.241876, -123.056595, 49.262398) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+10. id=3232 | CHSA_CODE=3232 | CHSA_NAME=Hastings-Sunrise
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.056679, 49.261890, -123.023077, 49.293876) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+11. id=3233 | CHSA_CODE=3233 | CHSA_NAME=Renfrew-Collingwood
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.058883, 49.231977, -123.023442, 49.265650) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+12. id=3241 | CHSA_CODE=3241 | CHSA_NAME=Shaughnessy/Arbutus Ridge/Kerrisdale
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.191364, 49.205105, -123.127226, 49.257948) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+13. id=3242 | CHSA_CODE=3242 | CHSA_NAME=West Point Grey/Dunbar-Southlands
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.224236, 49.219445, -123.169889, 49.278272) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+14. id=3244 | CHSA_CODE=3244 | CHSA_NAME=Kitsilano
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.185936, 49.257185, -123.138800, 49.279271) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+15. id=3251 | CHSA_CODE=3251 | CHSA_NAME=Kensington
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.090565, 49.232611, -123.058139, 49.256410) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+16. id=3252 | CHSA_CODE=3252 | CHSA_NAME=Mount Pleasant
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.115069, 49.256409, -123.076936, 49.273055) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+17. id=3253 | CHSA_CODE=3253 | CHSA_NAME=South Cambie/Riley Park
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.128089, 49.232909, -123.089850, 49.257820) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+18. id=3261 | CHSA_CODE=3261 | CHSA_NAME=Killarney
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.056860, 49.199750, -123.022952, 49.234808) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+19. id=3262 | CHSA_CODE=3262 | CHSA_NAME=Oakridge/Marpole
+    type=Polygon | valid=PASS | nonempty=PASS
+    bounds=(-123.149727, 49.198541, -123.101576, 49.234349) | Vancouver location=PASS
+    exterior clockwise=PASS | holes counterclockwise=PASS
+    id/code match DimCHSA=PASS | name match DimCHSA=PASS
+
+Validation checks
+-----------------
+geometry_collection_is_chsa: PASS
+geometry_count_is_19: PASS
+ids_unique_and_non_null: PASS
+ids_are_strings: PASS
+ids_match_dimchsa_codes: PASS
+names_match_dimchsa: PASS
+polygon_types_valid: PASS
+roundtrip_geometries_valid: PASS
+roundtrip_geometries_nonempty: PASS
+roundtrip_bounds_in_vancouver: PASS
+outer_rings_clockwise: PASS
+inner_rings_counterclockwise: PASS
+transform_and_integer_arcs_valid: PASS
+
+Geometry issue found: exterior rings were counterclockwise; Power BI Shape Map expects clockwise TopoJSON exteriors.
+Geometry fix applied: reversed every exterior ring and enforced counterclockwise winding for holes.
+
+FINAL RESULT: PASS

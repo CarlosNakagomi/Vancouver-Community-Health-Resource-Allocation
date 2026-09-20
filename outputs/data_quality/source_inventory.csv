@@ -1,0 +1,3 @@
+dataset,path,rows,columns,encoding,grain,candidate_primary_key,sha256
+BCHACHSAPO,data\raw\BCHACHSAPO.csv,217,124,UTF-8,One row per 2016 Community Health Service Area,CH_SA_CODE,d7081c5be6c1683b711930e691b2c41d9bfa7f8398426350544c18e645d6e52e
+ODHF,data\raw\odhf_bdoes_v1.csv,9039,17,Windows-1252,One source facility record; multiple providers may describe the same physical site,index,2b4076ae969ffb3a3b2eb5b7b3004b29da4206118e661c9a6c5eeb48cfddd765

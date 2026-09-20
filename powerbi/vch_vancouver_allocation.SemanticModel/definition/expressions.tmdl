@@ -1,0 +1,65 @@
+expression pProjectRoot = "C:\Users\carlo\OneDrive\Job\Applications\Vancouver Coastal Health\Vancouver-Coastal-Health" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 31454828-3217-4d0e-8c1d-e9ad4005c1bf
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression stg_CHSA_Census =
+		let
+		    Source = Csv.Document(
+		        File.Contents(pProjectRoot & "\\data\\raw\\BCHACHSAPO.csv"),
+		        [Delimiter=",", Columns=124, Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+		    ),
+		    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+		    TrimmedText = Table.TransformColumns(
+		        Headers,
+		        List.Transform(Table.ColumnNames(Headers), each {_, (x) => if x is text then Text.Trim(Text.Clean(x)) else x})
+		    ),
+		    Typed = Table.TransformColumnTypes(TrimmedText,{
+		        {"CH_SA_CODE", type text}, {"CH_SA_NAME", type text}, {"CHSRBRL_CL", type text},
+		        {"CHSPOP_CEN", Int64.Type}, {"HLT_A_CODE", type text}, {"HLT_A_NAME", type text},
+		        {"HAUTH_CODE", type text}, {"HAUTH_NAME", type text}, {"LG_FRM_DFQ", type text},
+		        {"LG_FRM_GNR", type number}, {"GRP_A_TTL", Int64.Type}, {"0_14_A_TTL", Int64.Type},
+		        {"65PLS_A_TL", Int64.Type}, {"OBJECTID", Int64.Type}
+		    }, "en-CA"),
+		    PreserveSourceGNR = Table.DuplicateColumn(Typed, "LG_FRM_GNR", "LG_FRM_GNR_SOURCE_VALUE"),
+		    CleanGNR = Table.TransformColumns(PreserveSourceGNR, {{"LG_FRM_GNR", each if _ >= 0 and _ <= 100 then _ else null, type nullable number}}),
+		    AddKeyValidation = Table.AddColumn(CleanGNR, "CHSA_Key_Is_Valid", each [CH_SA_CODE] <> null and Text.Length([CH_SA_CODE]) = 4, type logical)
+		in
+		    AddKeyValidation
+	lineageTag: 0cb1b6f5-2072-4484-8d2b-c3faf6d62bd6
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression stg_ODHF_Facilities =
+		let
+		    Source = Csv.Document(
+		        File.Contents(pProjectRoot & "\\data\\raw\\odhf_bdoes_v1.csv"),
+		        [Delimiter=",", Columns=17, Encoding=1252, QuoteStyle=QuoteStyle.Csv]
+		    ),
+		    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+		    TrimmedText = Table.TransformColumns(
+		        Headers,
+		        List.Transform(Table.ColumnNames(Headers), each {_, (x) => if x is text then Text.Trim(Text.Clean(x)) else x})
+		    ),
+		    Typed = Table.TransformColumnTypes(TrimmedText,{
+		        {"index", Int64.Type}, {"facility_name", type text}, {"source_facility_type", type text},
+		        {"odhf_facility_type", type text}, {"provider", type text}, {"postal_code", type text},
+		        {"city", type text}, {"province", type text}, {"CSDname", type text}, {"CSDuid", type text},
+		        {"Pruid", type text}, {"latitude", type number}, {"longitude", type number}
+		    }, "en-CA"),
+		    AddProvinceNormalized = Table.AddColumn(Typed, "province_normalized", each Text.Upper([province]), type text),
+		    AddCityNormalized = Table.AddColumn(AddProvinceNormalized, "city_normalized", each Text.Lower([city]), type text),
+		    StrictVancouverCandidates = Table.SelectRows(AddCityNormalized, each [province_normalized] = "BC" and [city_normalized] = "vancouver"),
+		    AddCoordinateStatus = Table.AddColumn(StrictVancouverCandidates, "CoordinateStatus", each if [latitude] = null or [longitude] = null then "Missing" else if [latitude] < -90 or [latitude] > 90 or [longitude] < -180 or [longitude] > 180 then "Invalid" else "Valid", type text)
+		in
+		    AddCoordinateStatus
+	lineageTag: 4997960b-2ffd-4a4b-8f76-bd122e04e3e0
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

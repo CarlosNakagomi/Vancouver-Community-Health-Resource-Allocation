@@ -1,0 +1,46 @@
+table DimCHSA
+	lineageTag: a5b2a85b-4825-4f03-90da-ab9825f1cced
+
+	column 'CHSA Code'
+		dataType: string
+		lineageTag: a6b2d708-29dd-429b-9361-d132beaa3e29
+		summarizeBy: none
+		sourceColumn: CHSA Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CHSA Name'
+		dataType: string
+		lineageTag: 34baec26-03e1-4a2d-8a7b-81a8282dfbbd
+		summarizeBy: none
+		sourceColumn: CHSA Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'City Overlap Share'
+		dataType: double
+		lineageTag: be743827-48b3-4533-8674-578f37261441
+		summarizeBy: sum
+		sourceColumn: City Overlap Share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition DimCHSA = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(pProjectRoot & "\\data\\processed\\fact_community_profile.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				    Select = Table.SelectColumns(Headers,{"CH_SA_CODE","CH_SA_NAME","CityOverlapShare"}),
+				    Rename = Table.RenameColumns(Select,{{"CH_SA_CODE","CHSA Code"},{"CH_SA_NAME","CHSA Name"},{"CityOverlapShare","City Overlap Share"}}),
+				    Typed = Table.TransformColumnTypes(Rename,{{"CHSA Code",type text},{"CHSA Name",type text},{"City Overlap Share",type number}}),
+				    Unique = Table.Distinct(Typed,{"CHSA Code"})
+				in
+				    Unique
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

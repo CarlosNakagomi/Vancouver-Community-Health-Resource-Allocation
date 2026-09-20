@@ -1,0 +1,113 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "69a9d84e8206bde695c9",
+  "position": {
+    "x": 10,
+    "y": 870,
+    "z": 3000,
+    "height": 210,
+    "width": 280,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimCHSA"
+                    }
+                  },
+                  "Property": "CHSA Name"
+                }
+              },
+              "queryRef": "DimCHSA.CHSA Name",
+              "nativeQueryRef": "CHSA Name",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Resource Priority Score"
+                }
+              },
+              "queryRef": "_Measures.Resource Priority Score",
+              "nativeQueryRef": "Resource Priority Score"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Vulnerability Proxy Score"
+                }
+              },
+              "queryRef": "_Measures.Vulnerability Proxy Score",
+              "nativeQueryRef": "Vulnerability Proxy Score"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Data Blindspot Score"
+                }
+              },
+              "queryRef": "_Measures.Data Blindspot Score",
+              "nativeQueryRef": "Data Blindspot Score"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Healthcare Supply Gap Score"
+                }
+              },
+              "queryRef": "_Measures.Healthcare Supply Gap Score",
+              "nativeQueryRef": "Healthcare Supply Gap Score"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Priority Rank"
+                }
+              },
+              "queryRef": "_Measures.Priority Rank",
+              "nativeQueryRef": "Priority Rank"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

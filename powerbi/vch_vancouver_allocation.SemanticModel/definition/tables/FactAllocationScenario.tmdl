@@ -1,0 +1,152 @@
+table FactAllocationScenario
+	lineageTag: e35858f2-2819-4c28-a759-73f5b0042be5
+
+	column CH_SA_CODE
+		dataType: string
+		lineageTag: 9192ba52-f7ac-4f5e-9d05-d9520462c10b
+		summarizeBy: none
+		sourceColumn: CH_SA_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourcePriorityScore
+		dataType: double
+		lineageTag: a014a90e-6b01-4f91-adcd-3aeb43aa2ed1
+		summarizeBy: sum
+		sourceColumn: ResourcePriorityScore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PriorityRank
+		dataType: int64
+		formatString: 0
+		lineageTag: 8197bb62-1d6f-408a-a181-5ff6eb257a46
+		summarizeBy: sum
+		sourceColumn: PriorityRank
+
+		annotation SummarizationSetBy = Automatic
+
+	column AllocationWeight
+		dataType: double
+		lineageTag: bd77d645-8a11-488e-a41f-78366f4fae67
+		summarizeBy: sum
+		sourceColumn: AllocationWeight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ScenarioBudgetAllocation
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: da69ff5a-3767-4e8e-b679-d302a4c18004
+		summarizeBy: sum
+		sourceColumn: ScenarioBudgetAllocation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column ScenarioClinicalFTEAllocation
+		dataType: double
+		lineageTag: dc5d5c47-7a1d-4d19-9ec8-d81ebe5faae4
+		summarizeBy: sum
+		sourceColumn: ScenarioClinicalFTEAllocation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ScenarioCommunityCareAllocation
+		dataType: int64
+		formatString: 0
+		lineageTag: c607fdb4-1268-4778-9994-0174a45209d8
+		summarizeBy: sum
+		sourceColumn: ScenarioCommunityCareAllocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column Scenario
+		dataType: string
+		lineageTag: d7271093-5f4f-4781-8d4a-272aa8344ab8
+		summarizeBy: none
+		sourceColumn: Scenario
+
+		annotation SummarizationSetBy = Automatic
+
+	column PopulationOnlyBudgetAllocation
+		dataType: decimal
+		formatString: $#,0.00;($#,0.00);$#,0.00
+		lineageTag: 3d0ca8cc-1723-4f0e-8e1e-6bb8c3e3ee11
+		summarizeBy: sum
+		sourceColumn: PopulationOnlyBudgetAllocation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column PopulationOnlyClinicalFTEAllocation
+		dataType: double
+		formatString: 0.0
+		lineageTag: 20339c91-3c62-4ffb-81a8-292f677e9d3d
+		summarizeBy: sum
+		sourceColumn: PopulationOnlyClinicalFTEAllocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column PopulationOnlyCommunityCareAllocation
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ef68aa4-dced-4afe-b776-59ebf30dbfe6
+		summarizeBy: sum
+		sourceColumn: PopulationOnlyCommunityCareAllocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column BudgetDifference
+		dataType: decimal
+		formatString: $#,0.00;($#,0.00);$#,0.00
+		lineageTag: d92482c7-5f1c-4b08-a3cd-bf3f9f8262ce
+		summarizeBy: sum
+		sourceColumn: BudgetDifference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column ClinicalFTEDifference
+		dataType: double
+		formatString: 0.0
+		lineageTag: 7f71fcd8-b98d-4e67-b300-68474f89cb32
+		summarizeBy: sum
+		sourceColumn: ClinicalFTEDifference
+
+		annotation SummarizationSetBy = Automatic
+
+	column CommunityCareDifference
+		dataType: int64
+		formatString: 0
+		lineageTag: ec8a20d2-0b4b-47dd-90fc-9192037c5766
+		summarizeBy: sum
+		sourceColumn: CommunityCareDifference
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactAllocationScenario = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(pProjectRoot & "\\outputs\\analytical\\community_priority_and_allocation.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				    Select = Table.SelectColumns(Headers,{"CH_SA_CODE","ResourcePriorityScore","PriorityRank","AllocationWeight","ScenarioBudgetAllocation","ScenarioClinicalFTEAllocation","ScenarioCommunityCareAllocation","PopulationOnlyBudgetAllocation","PopulationOnlyClinicalFTEAllocation","PopulationOnlyCommunityCareAllocation","BudgetDifference","ClinicalFTEDifference","CommunityCareDifference"}),
+				    AddScenario = Table.AddColumn(Select,"Scenario",each "Balanced",type text),
+				    Typed = Table.TransformColumnTypes(AddScenario,{{"CH_SA_CODE",type text},{"ResourcePriorityScore",type number},{"PriorityRank",Int64.Type},{"AllocationWeight",Percentage.Type},{"ScenarioBudgetAllocation",Currency.Type},{"ScenarioClinicalFTEAllocation",type number},{"ScenarioCommunityCareAllocation",Int64.Type},{"PopulationOnlyBudgetAllocation",Currency.Type},{"PopulationOnlyClinicalFTEAllocation",type number},{"PopulationOnlyCommunityCareAllocation",Int64.Type},{"BudgetDifference",Currency.Type},{"ClinicalFTEDifference",type number},{"CommunityCareDifference",Int64.Type}})
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

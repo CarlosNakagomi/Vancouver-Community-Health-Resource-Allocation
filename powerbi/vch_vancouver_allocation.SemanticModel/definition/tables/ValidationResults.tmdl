@@ -1,0 +1,43 @@
+table ValidationResults
+	lineageTag: eee6ed01-a214-4f10-8a71-aec996d49d0d
+
+	column Test
+		dataType: string
+		lineageTag: 719e4996-df10-4b0a-9dd1-c61ef082bd7d
+		summarizeBy: none
+		sourceColumn: Test
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 52bb1f66-a3e8-429d-a3fa-d7302cc405cd
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Detail
+		dataType: string
+		lineageTag: df0ab586-c72e-419c-8433-b02f76227748
+		summarizeBy: none
+		sourceColumn: Detail
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ValidationResults = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(pProjectRoot & "\outputs\data_quality\validation_results.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				    Select = Table.SelectColumns(Headers,{"test","status","detail"}),
+				    Rename = Table.RenameColumns(Select,{{"test","Test"},{"status","Status"},{"detail","Detail"}}),
+				    Typed = Table.TransformColumnTypes(Rename,{{"Test",type text},{"Status",type text},{"Detail",type text}})
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

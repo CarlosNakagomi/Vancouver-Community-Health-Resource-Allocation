@@ -1,0 +1,20 @@
+relationship 279c40cb-655c-2220-3aaa-58e3ac97b396
+	fromColumn: FactAllocationScenario.CH_SA_CODE
+	toColumn: DimCHSA.'CHSA Code'
+
+relationship 03dbe60b-358f-1a12-640e-2411d61d5ec1
+	fromColumn: FactCommunityProfile.CH_SA_CODE
+	toColumn: DimCHSA.'CHSA Code'
+
+relationship 6fd28536-76a7-017b-33bd-b02bead13084
+	fromColumn: FactFacilitySupply.CH_SA_CODE
+	toColumn: DimCHSA.'CHSA Code'
+
+relationship 88a55d10-eb83-588f-d8ad-b8355d45f430
+	fromColumn: DimFacility.CMNTY_HLTH_SERV_AREA_CODE
+	toColumn: DimCHSA.'CHSA Code'
+
+relationship c818302d-79c4-443e-a14e-39863a230471
+	fromColumn: FactPrioritySensitivity.'CHSA Code'
+	toColumn: DimCHSA.'CHSA Code'
+

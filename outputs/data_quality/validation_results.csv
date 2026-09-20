@@ -1,0 +1,14 @@
+test,status,detail
+Vancouver CHSA count,PASS,"expected 19, found 19"
+CHSA primary key unique,PASS,CH_SA_CODE unique
+UBC excluded,PASS,CHSA 3243 is outside Vancouver CSD
+Partial boundary flagged,PASS,CHSA 3242 overlap below 90%
+Facility key unique,PASS,CanonicalFacilityID unique
+Facility referential integrity,PASS,all mapped facility CHSAs exist
+No null spatial assignments,PASS,null assignments=0
+Score ranges,PASS,all scores 0-100
+Budget reconciles,PASS,sum=10000000.00
+Clinical FTE reconciles,PASS,sum=50.0
+Community care reconciles,PASS,sum=1000
+Sensitivity complete,PASS,rows=76
+Population total stable,PASS,2016 source total across 19 included CHSAs=663894

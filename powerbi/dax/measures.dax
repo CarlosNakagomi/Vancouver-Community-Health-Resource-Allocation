@@ -1,0 +1,32 @@
+// DISPLAY FOLDER: Core metrics
+Total Population := SUM ( FactCommunityProfile[CHSPOP_CEN] )
+Total Facilities := SUM ( FactFacilitySupply[FacilityCount] )
+Total CHSAs := DISTINCTCOUNT ( DimCHSA[CHSA Code] )
+Facilities per 10K Population := DIVIDE ( [Total Facilities] * 10000, [Total Population] )
+Population per Facility := DIVIDE ( [Total Population], [Total Facilities] )
+Youth Population := SUM ( FactCommunityProfile[0_14_A_TTL] )
+Senior Population := SUM ( FactCommunityProfile[65PLS_A_TL] )
+Age Sample Population := SUM ( FactCommunityProfile[GRP_A_TTL] )
+Youth % := DIVIDE ( [Youth Population], [Age Sample Population] )
+Senior % := DIVIDE ( [Senior Population], [Age Sample Population] )
+Weighted GNR := DIVIDE ( SUMX ( FactCommunityProfile, FactCommunityProfile[LG_FRM_GNR] * FactCommunityProfile[CHSPOP_CEN] ), [Total Population] )
+
+// DISPLAY FOLDER: Transparent scores
+Vulnerability Proxy Score := AVERAGE ( FactCommunityProfile[CommunityVulnerabilityProxyScore] )
+Data Blindspot Score := AVERAGE ( FactCommunityProfile[DataBlindspotScore] )
+Healthcare Supply Score := AVERAGE ( FactFacilitySupply[HealthcareSupplyScore] )
+Healthcare Supply Gap Score := AVERAGE ( FactFacilitySupply[HealthcareSupplyGapScore] )
+Resource Priority Score := AVERAGE ( FactAllocationScenario[ResourcePriorityScore] )
+Priority Rank := MIN ( FactAllocationScenario[PriorityRank] )
+
+// DISPLAY FOLDER: Scenario model — not actual VCH resources
+Scenario Budget Allocation := SUM ( FactAllocationScenario[ScenarioBudgetAllocation] )
+Scenario Clinical FTE Allocation := SUM ( FactAllocationScenario[ScenarioClinicalFTEAllocation] )
+Scenario Community Care Allocation := SUM ( FactAllocationScenario[ScenarioCommunityCareAllocation] )
+Budget Reconciliation := [Scenario Budget Allocation] - 10000000
+Clinical FTE Reconciliation := [Scenario Clinical FTE Allocation] - 50
+Community Care Reconciliation := [Scenario Community Care Allocation] - 1000
+
+High Priority Communities :=
+COUNTROWS ( FILTER ( VALUES ( DimCHSA[CHSA Code] ), [Priority Rank] <= 5 ) )
+

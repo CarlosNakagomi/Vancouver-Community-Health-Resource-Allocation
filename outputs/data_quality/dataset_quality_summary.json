@@ -1,0 +1,43 @@
+{
+  "BCHACHSAPO": {
+    "dataset": "BCHACHSAPO",
+    "row_count": 217,
+    "column_count": 124,
+    "duplicate_rows": 0,
+    "candidate_key": "CH_SA_CODE",
+    "duplicate_candidate_keys": 0,
+    "null_candidate_keys": 0,
+    "negative_census_values": 0,
+    "gnr_outside_0_100": 2,
+    "youth_gt_age_total": 0,
+    "health_authority_distribution": {
+      "Vancouver Island": 49,
+      "Vancouver Coastal": 45,
+      "Fraser": 42,
+      "Interior": 41,
+      "Northern": 40
+    },
+    "source_suppression_note": "Counts are subject to Statistics Canada random rounding. Two long-form GNR values use 1000 outside the valid 0-100 range and are accompanied by DQF flags; cleaned GNR converts them to null while retaining source values."
+  },
+  "ODHF": {
+    "dataset": "ODHF",
+    "row_count": 9039,
+    "column_count": 17,
+    "duplicate_rows": 0,
+    "candidate_key": "index",
+    "duplicate_candidate_keys": 0,
+    "null_candidate_keys": 0,
+    "missing_coordinate_pairs": 1496,
+    "invalid_coordinate_rows": 0,
+    "reported_BC_Vancouver_rows": 196,
+    "reported_BC_Vancouver_with_coordinates": 167,
+    "facility_type_distribution": {
+      "Nursing and residential care facilities": 4444,
+      "Ambulatory health care services": 2727,
+      "Hospitals": 1853,
+      "<NULL>": 13,
+      "nursing and residential care facilities": 2
+    },
+    "join_warning": "CSDuid is sparsely populated; city text alone is not a defensible city boundary test. Use coordinate point-in-polygon."
+  }
+}

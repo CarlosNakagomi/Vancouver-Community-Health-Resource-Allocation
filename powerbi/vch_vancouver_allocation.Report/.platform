@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "vch_vancouver_allocation"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7974009e-2d8a-4077-80d4-59c73d2cc183"
+  }
+}

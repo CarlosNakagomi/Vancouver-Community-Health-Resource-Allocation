@@ -1,0 +1,28 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["pProjectRoot","stg_CHSA_Census","stg_ODHF_Facilities","DimCHSA","DimFacility","FactAllocationScenario","FactPrioritySensitivity","FactCommunityProfile","FactFacilitySupply","ValidationResults","_Measures"]
+
+annotation __TEdtr = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DimCHSA
+ref table DimFacility
+ref table FactAllocationScenario
+ref table FactCommunityProfile
+ref table FactFacilitySupply
+ref table _Measures
+ref table FactPrioritySensitivity
+ref table ValidationResults
+
+ref cultureInfo en-US
+

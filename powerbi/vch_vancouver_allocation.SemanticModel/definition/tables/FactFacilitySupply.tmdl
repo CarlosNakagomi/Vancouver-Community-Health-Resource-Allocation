@@ -1,0 +1,109 @@
+table FactFacilitySupply
+	lineageTag: 00c3a13a-8142-4027-91ac-d69ff0618788
+
+	column CH_SA_CODE
+		dataType: string
+		lineageTag: a87e3bc0-2ac9-4a4a-b5c5-d05ae1ce479b
+		summarizeBy: none
+		sourceColumn: CH_SA_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CH_SA_NAME
+		dataType: string
+		lineageTag: ec2025e1-7f03-48db-9a2b-23c564d885df
+		summarizeBy: none
+		sourceColumn: CH_SA_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column FacilityCount
+		dataType: int64
+		formatString: 0
+		lineageTag: 977b6288-53f6-464c-bd02-eecd7f06f018
+		summarizeBy: sum
+		sourceColumn: FacilityCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hospitals
+		dataType: int64
+		formatString: 0
+		lineageTag: 87e79861-e94a-43ed-a3d4-2c5cf9f1d881
+		summarizeBy: sum
+		sourceColumn: Hospitals
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ambulatory health care services'
+		dataType: int64
+		formatString: 0
+		lineageTag: 22778d93-af22-4b3b-b8a5-c1ef46ada11a
+		summarizeBy: sum
+		sourceColumn: Ambulatory health care services
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nursing and residential care facilities'
+		dataType: int64
+		formatString: 0
+		lineageTag: ffdc4225-1d93-4e57-a3a6-a6f8d2282c05
+		summarizeBy: sum
+		sourceColumn: Nursing and residential care facilities
+
+		annotation SummarizationSetBy = Automatic
+
+	column FacilitiesPer10K
+		dataType: double
+		lineageTag: 2e4ba138-abc9-451d-8f0d-e69202ede3cd
+		summarizeBy: sum
+		sourceColumn: FacilitiesPer10K
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PopulationPerFacility
+		dataType: double
+		lineageTag: 4e15e639-14c9-4c0a-bdc9-b1dfc3c330f5
+		summarizeBy: sum
+		sourceColumn: PopulationPerFacility
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HealthcareSupplyScore
+		dataType: double
+		lineageTag: 5387fbeb-d94c-4c9f-ad2b-92436395c3b9
+		summarizeBy: sum
+		sourceColumn: HealthcareSupplyScore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HealthcareSupplyGapScore
+		dataType: double
+		lineageTag: dbee6dfd-c5e4-4c71-94e3-84663197d845
+		summarizeBy: sum
+		sourceColumn: HealthcareSupplyGapScore
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FactFacilitySupply = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(pProjectRoot & "\\data\\processed\\fact_facility_supply.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers,{{"CH_SA_CODE",type text},{"FacilityCount",Int64.Type},{"Hospitals",Int64.Type},{"Ambulatory health care services",Int64.Type},{"Nursing and residential care facilities",Int64.Type},{"FacilitiesPer10K",type number},{"PopulationPerFacility",type number},{"HealthcareSupplyScore",type number},{"HealthcareSupplyGapScore",type number}})
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

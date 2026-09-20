@@ -1,0 +1,14 @@
+﻿------------------
+Order Details
+-----------------
+Order ID: 2593669
+Date: 20260918
+
+----------------------
+Feature Types
+-----------------------
+ - BCHA CHSA POPULATION AGE PH SV in directory BCHACHSAPO
+
+----------------------------
+Packaged Products
+----------------------------

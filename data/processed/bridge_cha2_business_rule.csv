@@ -1,0 +1,4 @@
+BusinessRuleMember,SourceCHSAName,SourceCHSACode,MappingStatus
+Downtown Eastside,Downtown Eastside,3221,Matched
+Strathcona,,,Not separately represented in 2016 CHSA source
+Grandview-Woodlands,Grandview-Woodland,3223,Matched after documented spelling normalization
