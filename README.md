@@ -6,8 +6,9 @@ Independent portfolio project using public/open Vancouver census, healthcare-fac
 
 ## Quick Access
 
-- **[View Dashboard Report (PDF)](Vancouver_Community_Health_Resource_Allocation.pdf)** — fastest six-page static review
-- **[Open Interactive Power BI Report (.pbix)](powerbi/vch_vancouver_allocation.pbix)** — completed dashboard, semantic model, and imported portfolio data; requires Power BI Desktop
+- **[View Case Study (PDF)](Vancouver_Community_Health_Resource_Allocation_Case_Study.pdf)** — concise two-page executive case study
+- **[View Dashboard Report (PDF)](Vancouver_Community_Health_Resource_Allocation.pdf)** — full six-page static dashboard review
+- **[Open Interactive Power BI Report (.pbix)](powerbi/vch_vancouver_allocation.pbix)** — completed interactive dashboard; requires Power BI Desktop
 - **[Inspect the Power BI source project (.pbip)](powerbi/vch_vancouver_allocation.pbip)** — source-controlled PBIR report, TMDL model, Power Query, and DAX implementation
 - [Management Brief](docs/management_brief.md) · [Methodology](docs/methodology.md) · [Validation Report](docs/validation_report.md)
 - [Power BI Build Instructions](powerbi/BUILD_INSTRUCTIONS.md) · [Business Rules](docs/business_rules.md) · [Data Dictionary](docs/data_dictionary.md)
