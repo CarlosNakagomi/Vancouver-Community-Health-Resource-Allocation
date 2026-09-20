@@ -40,10 +40,10 @@ These weights are transparent modelling assumptions, not empirically validated h
 
 ## Data Sources
 
-- Statistics Canada — 2016 Census / Census Profile
-- Statistics Canada / Government of Canada — Open Database of Healthcare Facilities (ODHF)
-- BC Community Health Service Area geography
-- Statistics Canada — Vancouver Census Subdivision boundary
+- [Statistics Canada — 2016 Census / Census Profile](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/index.cfm?Lang=E)
+- [Statistics Canada / Government of Canada — Open Database of Healthcare Facilities (ODHF)](https://open.canada.ca/data/en/dataset/a1bcd4ee-8e57-499b-9c6f-94f6902fdf32)
+- [BC Community Health Service Area geography](https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_admin_boundaries/MapServer/12)
+- [Statistics Canada — Vancouver Census Subdivision boundary](https://open.canada.ca/data/en/dataset/90db78e2-eda2-4b2c-ae2e-a474187f2bf8)
 
 Raw source inputs are not redistributed in this repository; obtain them from their original public providers. Attribution and source metadata are available in [data/reference](data/reference/) and the [methodology](docs/methodology.md).
 
