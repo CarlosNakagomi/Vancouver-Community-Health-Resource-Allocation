@@ -59,6 +59,10 @@ The **Vulnerability Proxy** uses age structure and is not a clinical-need or mul
 
 [Management Brief](docs/management_brief.md) · [Methodology](docs/methodology.md) · [Business Rules](docs/business_rules.md) · [Validation Report](docs/validation_report.md) · [Data Quality Report](docs/data_quality_report.md) · [Limitations](docs/limitations.md) · [Power BI Build Instructions](powerbi/BUILD_INSTRUCTIONS.md)
 
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/carloshenriquenakagomi/) · [Email](mailto:carlosnakagomi@gmail.com)
+
 ## License
 
 The [MIT License](LICENSE) applies only to the author's original code. Third-party datasets and source materials remain subject to their respective licences, terms, and attribution requirements.
